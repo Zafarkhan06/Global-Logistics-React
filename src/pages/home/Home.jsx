@@ -8,6 +8,7 @@ import threeTrucks from "../../asset/images/three-trucks.webp"
 import FolderCopyIcon from '@mui/icons-material/FolderCopy';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import talkingGirl from "../../asset/images/talking-girl.png";
 function Home() {
   return (
     <>
@@ -21,7 +22,7 @@ function Home() {
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <div className="flex pt-6 items-center  flex-col lg:flex-row lg:items-start">
                 <div className="lg:w-6/12 lg:mt-10">
-                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Raleway leading-tight text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#ff914c]">Most Reliable</span>  Dispatch Company in  North America.
+                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Raleway leading-tight text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#e87700]">Most Reliable</span>  Dispatch Company in  North America.
                   </h1>
                   <p className="text-center md:text-start text-base lg:text-base xl:text-lg text-[#292929] font-Raleway mt-4 lg:mt-8">We find the best paying loads in the market.
                   </p>
@@ -40,11 +41,11 @@ function Home() {
                       textTransform: "none",
 
                       background:
-                        "#ff914c",
+                        "#e87700",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#ff914c",
+                          "#e87700",
                         boxShadow: "none",
                       },
                     }}> Hire a Dispatcher today</Button>
@@ -104,11 +105,11 @@ function Home() {
                       textTransform: "none",
 
                       background:
-                        "#ff914c",
+                        "#e87700",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#ff914c",
+                          "#e87700",
                         boxShadow: "none",
                       },
                     }}> Click here to change routes</Button>
@@ -134,11 +135,11 @@ function Home() {
                       textTransform: "none",
                       px: 5,
                       background:
-                        "#ff914c",
+                        "#e87700",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#ff914c",
+                          "#e87700",
                         boxShadow: "none",
                       },
                     }}> Call Now!</Button>
@@ -221,7 +222,7 @@ function Home() {
                 </p>
                 <div className="mt-16 flex flex-col md:flex-row gap-10 lg:gap-28 items-start">
                   <div className="flex justify-center items-center flex-col">
-                    <FolderCopyIcon sx={{ fontSize: "70px", color: "#ff914c" }} />
+                    <FolderCopyIcon sx={{ fontSize: "70px", color: "#e87700" }} />
                     <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-[#292929]">Send Documents
                     </p>
                     <p className="text-lg font-Raleway text-center  italic text-[#292929]">MC Authority, Certificate of <br /> Insurance and W-9 Form
@@ -239,18 +240,18 @@ function Home() {
                         textTransform: "none",
                         px: 6,
                         background:
-                          "#ff914c",
+                          "#e87700",
                         color: "white",
                         "&:hover": {
                           background:
-                            "#ff914c",
+                            "#e87700",
                           boxShadow: "none",
                         },
                       }}> Send Documents</Button>
                     </div>
                   </div>
                   <div className="flex justify-center items-center flex-col">
-                    <HandshakeIcon sx={{ fontSize: "70px", color: "#ff914c" }} />
+                    <HandshakeIcon sx={{ fontSize: "70px", color: "#e87700" }} />
                     <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-[#292929]">Sign Agreement
                     </p>
                     <p className="text-lg font-Raleway text-center  italic text-[#292929]">Sign a quick and easy dispatch <br /> service level agreement.
@@ -269,18 +270,18 @@ function Home() {
                         textTransform: "none",
                         px: 6,
                         background:
-                          "#ff914c",
+                          "#e87700",
                         color: "white",
                         "&:hover": {
                           background:
-                            "#ff914c",
+                            "#e87700",
                           boxShadow: "none",
                         },
                       }}> Request Agreement</Button>
                     </div>
                   </div>
                   <div className="flex justify-center items-center flex-col">
-                    <LocalShippingIcon sx={{ fontSize: "70px", color: "#ff914c" }} />
+                    <LocalShippingIcon sx={{ fontSize: "70px", color: "#e87700" }} />
                     <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center  text-[#292929]">Hit the road
 
                     </p>
@@ -298,11 +299,11 @@ function Home() {
                         textTransform: "none",
                         px: 6,
                         background:
-                          "#ff914c",
+                          "#e87700",
                         color: "white",
                         "&:hover": {
                           background:
-                            "#ff914c",
+                            "#e87700",
                           boxShadow: "none",
                         },
                       }}> Hire a Dispatcher</Button>
@@ -310,12 +311,134 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div>
-                
+              <div className=" mt-20 md:mt-24 flex  flex-col relative md:flex-row items-start justify-between">
+                <SvgComponent className="absolute -top-10 right-96 w-20 opacity-40 z-0 " />
+
+                <div className="w-full md:w-5/12">
+                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-start italic text-[#292929] ">Top dedicated truck <br />dispatch service
+                  </p>
+                  <p className="md:text-sm mt-6 text-xs lg:text-base font-normal font-Raleway text-center md:text-start text-[#292929] ">As truck dispatchers providing freight dispatching services, we take a low percentage of your rate. This is an incentive to negotiate high rates for you. The more money you make, the more money we make.
+                  </p>
+                  <p className="md:text-sm mt-3 text-xs lg:text-base font-normal font-Raleway text-center md:text-start text-[#292929] ">There are NO contracts. It is difficult to be profitable and that is why we charge only a small Percentage Fee for any premium load we find. Other dispatchers and brokers charge much higher fees and do not care about the service they provide to their drivers, we believe in long term relationships, our main focus is a great truck dispatch and customer service.
+                  </p>
+                  <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
+                    <Button variant="contained" className="font-Raleway" sx={{
+
+                      py: 1,
+                      boxShadow: "none",
+                      fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
+                      fontWeight: "bold",
+                      px: 3,
+                      letterSpacing: "0px",
+                      fontFamily: "Raleway",
+                      textTransform: "none",
+
+                      background:
+                        "#e87700",
+                      color: "white",
+                      "&:hover": {
+                        background:
+                          "#e87700",
+                        boxShadow: "none",
+                      },
+                    }}> Hire a dispatcher today</Button>
+                  </div>
+                </div>
+                <div className="md:w-7/12 mt-10">
+                  <LazyLoadImage
+                    src={talkingGirl}
+                    alt="muntazim logo"
+                    className="w-full md:w-full lg:w-full "
+                  />
+
+                </div>
+                <SvgComponent className="absolute -bottom-3 -right-10 md:right-10 w-32  opacity-60 " />
               </div>
             </Grid>
           </Grid>
         </Container>
+
+        <div className="flex py-16 md:py-20 justify-center bg-[#e87700] items-start">
+          <Container
+            disableGutters={true}
+            maxWidth="lg"
+            sx={{ px: { xs: "10px", lg: "0px" } }}
+          >
+            <Grid container sx={{ justifyContent: "center" }}>
+              <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center italic text-white ">What is truck dispatch service?
+                </p>
+                <p className="md:text-sm mt-6 text-xs lg:text-base font-normal font-Raleway text-center text-white md: px-16 px-8 lg:px-28">A truck dispatch services help truck drivers and owner operators who have their own trucking company manage the load booking and back-office processes of running a trucking company. Some dispatchers specialize only in booking loads, while others, like Genius Dispatch, offer a wide variety of services such as invoice management and detention requests.
+                </p>
+                <div className="mt-6 flex justify-center lg:mt-10">
+                  <Button variant="outlined" className="font-Raleway" sx={{
+
+                    py: 1,
+                    boxShadow: "none",
+                    fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
+                    fontWeight: "bold",
+                    px: 3,
+                    border: "2px solid white",
+                    letterSpacing: "0px",
+                    fontFamily: "Raleway",
+                    textTransform: "none",
+
+                    background:
+                      "#e87700",
+                    color: "white",
+                    "&:hover": {
+                      background:
+                        "#e87700",
+                      boxShadow: "none",
+                      border: "2px solid black"
+                    },
+                  }}> Hire a Genius Dispatcher</Button>
+                </div>
+              </Grid>
+            </Grid>
+          </Container>
+        </div>
+        <div className="person-bg py-16 realtive">
+          <Container
+            disableGutters={true}
+            maxWidth="lg"
+            sx={{ px: { xs: "10px", lg: "0px" } }}
+          >
+            <Grid container sx={{ justifyContent: "center" }}>
+              <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                <div className=" flex flex-col  md:items-start">
+                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-start italic text-white">Genius Dispatch is your<br /> freight planning solution.
+                  </p>
+                  <p className="text-base text-white w-full lg:w-2/6 mt-10">
+                    Our services are mainly for owner operators, independent truckers & carriers with their own DOT or MC authority. It’s in our best interest for us to find the best paying loads available for you. We dispatch dry-vans, reefers , flatbeds. We find you the best truck loads in the US. We help you improve your profits and experience. Whether you are looking for your next load or you need a load that takes you home, Genius Dispatch is committed to your goals. For us to be successful, you must be successful first. We are the best dispatch service in the US.
+                  </p>
+                  <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
+                    <Button variant="contained" className="font-Raleway" sx={{
+
+                      py: 1,
+                      boxShadow: "none",
+                      fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
+                      fontWeight: "bold",
+
+                      letterSpacing: "0px",
+                      fontFamily: "Raleway",
+                      textTransform: "none",
+                      px: 5,
+                      background:
+                        "#e87700",
+                      color: "white",
+                      "&:hover": {
+                        background:
+                          "#e87700",
+                        boxShadow: "none",
+                      },
+                    }}> Start Today</Button>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
+          </Container>
+        </div>
       </div>
     </>
   );

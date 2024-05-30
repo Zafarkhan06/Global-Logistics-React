@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
-import logo from "../../asset/images/3.png";
+import logo from "../../asset/images/PGL WHITE BG PNG.png";
 import { Container, Grid, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -40,13 +40,13 @@ const NavBar = () => {
         >
           <Grid container sx={{ justifyContent: "center" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <div className="flex justify-between items-center  mb-3 lg:mb-0 ">
+              <div className="flex justify-between py-2 items-center  mb-3 lg:mb-0 ">
                 <div className="w-2/6">
                   <LazyLoadImage
                     onClick={() => navigate("/home")}
                     src={logo}
                     alt="muntazim logo"
-                    className="h-20 w-24 cursor-pointer"
+                    className="h-16 w-16 cursor-pointer"
                   />
                 </div>
                 <div className="lg:flex hidden gap-20 items-center ">

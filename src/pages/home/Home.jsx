@@ -114,8 +114,9 @@ function Home() {
                 <SvgComponent className="absolute -bottom-3 right-10 w-32  opacity-60 " />
               </div>
               <div className="truck-bg rounded-2xl shadow-2xl mt-20 realtive">
-                <SvgComponent className="absolute top-0 left-20 w-20  opacity-80 z-10 " />
+                
                 <div className="py-20 px-6 md:px-20 flex flex-col  md:items-end">
+                
                   <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-right italic text-white">Call us today, get loaded <br /> & be profitable now
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">

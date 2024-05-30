@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../asset/images/3.png";
+import logo from "../../asset/images/PGL WHITE BG PNG.png";
 import { Container, Grid, Button } from "@mui/material";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function Footer() {
   const navigate = useNavigate();
   return (
-    <div className="bg-[#2e2a2a] pt-48">
+    <div className="bg-[#e87700] pt-24">
       <Container
         disableGutters={true}
         maxWidth="lg"
@@ -22,7 +22,7 @@ function Footer() {
               <p className="text-3xl md:text-6xl text-white ultra text-center capitalize font-black">
                 Request more information
               </p>
-              <p className="text-sm tracking-tighter md:text-sm raleway lowercase text-center  text-[#d8d9dd]">
+              <p className="text-sm tracking-tighter md:text-sm raleway lowercase text-center  text-[#eaecf3]">
               MULTIPLE SERVICES STRATEGICALLY PUT TOGETHER TO FORM A UNIQUE <br/> BUSINESS PROCESS OUTSOURCING ORGANIZATION.
               </p>
               <motion.div
@@ -55,14 +55,14 @@ function Footer() {
                   Contact us
                 </Button>
               </motion.div>
-              <p className="text-[#d8d9dd] font-Raleway text-xs">
+              {/* <p className="text-[#d8d9dd] font-Raleway text-xs">
                 &copy;2024 Light Communications , LLC
-              </p>
+              </p> */}
             </div>
             <hr />
-            <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-3">
+            <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-4">
               <div className="md:w-4/12">
-                <LazyLoadImage  onClick={() => navigate("/home")} src={logo} alt="muntazim logo" className="h-20 w-24 cursor-pointer" />
+                <LazyLoadImage  onClick={() => navigate("/home")} src={logo} alt="muntazim logo" className="h-16 cursor-pointer" />
               </div>
               <div className="flex flex-col gap-3 pb-4 md:w-8/12 md:flex-row items-center justify-between">
                 <div className=" flex flex-wrap gap-8">
@@ -88,20 +88,9 @@ function Footer() {
                     whileTap={{ scale: 0.9 }}
                     className="hover:text-[#F8D442] cursor-pointer font-Raleway text-white capitalize"
                   >
-                    outbound
+                    Price & Plans
                   </motion.p>
-                  <motion.p
-                    whileInView={{
-                      opacity: 1,
-                      transition: { duration: 1 },
-                      scale: 1.12,
-                    }}
-                    onClick={() => navigate("/about-us")}
-                    whileTap={{ scale: 0.9 }}
-                    className="hover:text-[#F8D442] cursor-pointer font-Raleway text-white capitalize"
-                  >
-                    about us
-                  </motion.p>
+                  
                   <motion.p
                     whileInView={{
                       opacity: 1,
@@ -124,7 +113,7 @@ function Footer() {
                       width="45"
                       height="45"
                       viewBox="0 0 45 45"
-                      fill="none"
+                      fill="black"
                       className="animate-pulse cursor-pointer"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -157,7 +146,7 @@ function Footer() {
                       height="45"
                       className="animate-pulse"
                       viewBox="0 0 45 45"
-                      fill="none"
+                      fill="black"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -181,7 +170,7 @@ function Footer() {
                       height="45"
                       className="animate-pulse"
                       viewBox="0 0 45 45"
-                      fill="none"
+                      fill="black"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path

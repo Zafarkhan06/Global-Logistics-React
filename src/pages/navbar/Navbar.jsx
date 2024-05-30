@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
 import logo from "../../asset/images/3.png";
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
@@ -32,7 +32,7 @@ const NavBar = () => {
   }, []);
   return (
     <>
-      <div className=" py-3 md:py-4 bg-[#121212]">
+      <div className=" bg-white border-b">
         <Container
           disableGutters={true}
           maxWidth="lg"
@@ -43,74 +43,69 @@ const NavBar = () => {
               <div className="flex justify-between items-center  mb-3 lg:mb-0 ">
                 <div className="w-2/6">
                   <LazyLoadImage
-                  onClick={() => navigate("/home")}
+                    onClick={() => navigate("/home")}
                     src={logo}
                     alt="muntazim logo"
                     className="h-20 w-24 cursor-pointer"
                   />
                 </div>
-                <div className="lg:flex hidden  items-center w-4/6 space-x-4">
+                <div className="lg:flex hidden gap-20 items-center ">
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/home")}
-                    className={`text-sm w-44 ${
-                      window.location.href.includes("/home")
-                        ? "text-[#F8D442]"
-                        : "text-white"
-                    } raleway font-semibold cursor-pointer uppercase hover:text-[#F8D442]`}
+                    className={`${window.location.href.includes("/home")
+                      ? "text-[#757575]"
+                      : "text-black"
+                      } font-Raleway font-medium capitalize cursor-pointer hover:text-[#757575]`}
                   >
-                    Home112
+                    Home
                   </motion.p>
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/outbound")}
-                    className={`text-sm w-44 ${
-                      window.location.href.includes("/outbound")
-                        ? "text-[#F8D442]"
-                        : "text-white"
-                    } raleway font-semibold cursor-pointer uppercase hover:text-[#F8D442]`}
+                    className={` ${window.location.href.includes("/outbound")
+                      ? "text-[#757575]"
+                      : "text-black"
+                      } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
                   >
-                    outbound
+                    Price & Plans
                   </motion.p>
-                  <motion.p
-                    whileTap={{ scale: 0.9 }}
-                    whileHover={{ scale: 1.04 }}
-                    onClick={() => navigate("/inbound")}
-                    className={`text-sm w-44 ${
-                      window.location.href.includes("/inbound")
-                        ? "text-[#F8D442]"
-                        : "text-white"
-                    } raleway font-semibold cursor-pointer uppercase hover:text-[#F8D442]`}
-                  >
-                    inbound
-                  </motion.p>
-                  <motion.p
-                    whileTap={{ scale: 0.9 }}
-                    whileHover={{ scale: 1.04 }}
-                    onClick={() => navigate("/about-us")}
-                    className={`text-sm w-44 ${
-                      window.location.href.includes("/about-us")
-                        ? "text-[#F8D442]"
-                        : "text-white"
-                    } raleway font-semibold cursor-pointer uppercase hover:text-[#F8D442]`}
-                  >
-                    About us
-                  </motion.p>
+
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/contactus")}
-                    className={`text-sm w-44 ${
-                      window.location.href.includes("/contactus")
-                        ? "text-[#F8D442]"
-                        : "text-white"
-                    } raleway font-semibold cursor-pointer uppercase hover:text-[#F8D442]`}
+                    className={` ${window.location.href.includes("/contactus")
+                      ? "text-[#757575]"
+                      : "text-black"
+                      } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
                   >
                     Contact Us
                   </motion.p>
                 </div>
+                <div className="hidden lg:block">
+                  <Button variant="contained" sx={{
+                    px: 5,
+                    py: 1,
+                    boxShadow: "none",
+                    fontSize: "1rem",
+                    fontWeight: "semibold",
+                    width: "200px",
+                    textTransform: "capitalize",
+                    letterSpacing: "2px",
+                    background:
+                      "#ff914c",
+                    color: "white",
+                    "&:hover": {
+                      background:
+                        "#ff914c",
+                      boxShadow: "none",
+                    },
+                  }}> Contact Us</Button>
+                </div>
+
                 {/* Mobile Navigation Icon */}
                 <div
                   ref={menuRef}
@@ -120,63 +115,61 @@ const NavBar = () => {
                   {nav ? (
                     <CloseIcon
                       size={40}
-                      sx={{ fontSize: "40px", color: "white" }}
+                      sx={{ fontSize: "40px", color: "black" }}
                     />
                   ) : (
-                    <MenuIcon sx={{ fontSize: "40px", color: "white" }} />
+                    <MenuIcon sx={{ fontSize: "40px", color: "black" }} />
                   )}
                   {nav ? (
-                    <div className="fixed lg:hidden left-0 top-[92px] w-full max-h-fit border-b rounded-b-xl py-5 bg-[#121212] ease-in-out duration-500">
+                    <div className="fixed lg:hidden left-0 top-[92px] w-full max-h-fit border-b rounded-b-xl py-5 bg-white ease-in-out duration-500">
                       <p
                         onClick={() => navigate("/home")}
-                        className={`text-sm ${
-                          window.location.href.includes("/home")
-                            ? "text-[#F8D442]"
-                            : "text-white"
-                        }  hover:text-[#F8D442] py-2 tracking-wider cursor-pointer px-8 uppercase font-medium hover:bg-[#2e2a2a]`}
+                        className={`text-sm ${window.location.href.includes("/home")
+                          ? "text-[#757575]"
+                          : "text-black"
+                          }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Home
                       </p>
                       <p
                         onClick={() => navigate("/outbound")}
-                        className={`text-sm mt-3 ${
-                          window.location.href.includes("/outbound")
-                            ? "text-[#F8D442]"
-                            : "text-white"
-                        }  hover:text-[#F8D442] py-2 tracking-wider cursor-pointer px-8 uppercase font-medium hover:bg-[#2e2a2a]`}
+                        className={`text-sm mt-3 ${window.location.href.includes("/outbound")
+                          ? "text-[#757575]"
+                          : "text-black"
+                          }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
-                        outbound
+                        Price & Plans
                       </p>
-                      <p
-                        onClick={() => navigate("/inbound")}
-                        className={`text-sm mt-3 ${
-                          window.location.href.includes("/inbound")
-                            ? "text-[#F8D442]"
-                            : "text-white"
-                        }  hover:text-[#F8D442] py-2 tracking-wider cursor-pointer px-8 uppercase font-medium hover:bg-[#2e2a2a]`}
-                      >
-                        Inbound
-                      </p>
-                      <p
-                        onClick={() => navigate("/about-us")}
-                        className={`text-sm mt-3 ${
-                          window.location.href.includes("/about-us")
-                            ? "text-[#F8D442]"
-                            : "text-white"
-                        }  hover:text-[#F8D442] py-2 tracking-wider cursor-pointer px-8 uppercase font-medium hover:bg-[#2e2a2a]`}
-                      >
-                        About us
-                      </p>
+
                       <p
                         onClick={() => navigate("/contactus")}
-                        className={`text-sm mt-3 ${
-                          window.location.href.includes("/contactus")
-                            ? "text-[#F8D442]"
-                            : "text-white"
-                        }  hover:text-[#F8D442] py-2 tracking-wider cursor-pointer px-8 uppercase font-medium hover:bg-[#2e2a2a]`}
+                        className={`text-sm mt-3 ${window.location.href.includes("/contactus")
+                          ? "text-[#757575]"
+                          : "text-black"
+                          }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Contact Us
                       </p>
+                      <div className="px-5 pt-5 flex justify-center" >
+
+                        <Button variant="contained" sx={{
+                          px: 5,
+                          py: 1,
+                          fontSize: "1rem",
+                          fontWeight: "semibold",
+                          width: "200px",
+                          textTransform: "capitalize",
+                          letterSpacing: "2px",
+                          background:
+                            "#ff914c",
+                          color: "#f5f1e4",
+                          "&:hover": {
+                            color: "#121212",
+                            background:
+                              "#ff914c",
+                          },
+                        }}> Contact Us</Button>
+                      </div>
                     </div>
                   ) : (
                     ""

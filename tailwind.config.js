@@ -10,7 +10,7 @@ export default {
       Inter: ['Inter', 'sans-serif'],
       Raleway: ['Raleway', 'sans-serif'],
       Bebas: ['Bebas', 'sans-serif'],
-  
+      Monts: ['Montserrat', 'sans-serif'], 
     },
   },
   plugins: [],

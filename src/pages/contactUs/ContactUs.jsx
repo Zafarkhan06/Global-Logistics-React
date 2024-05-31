@@ -250,7 +250,7 @@ function ContactUs() {
           </Grid>
         </Grid>
       </Container>
-      <div className="bg-[#e8e6e6]  md:mt-16">
+      <div className="bg-[#e8e6e6]  md:mt-16 mb-10">
         <Container
           disableGutters={true}
           maxWidth="lg"

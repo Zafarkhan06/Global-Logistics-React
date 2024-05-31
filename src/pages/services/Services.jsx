@@ -46,7 +46,7 @@ function PricesAndPlans() {
               <SvgComponent className="absolute -top-44 -right-40 w-36  opacity-40 " />
             </div>
 
-            <div className="flex mt-20 justify-center gap-10 items-start flex-col relative lg:flex-row pb-20">
+            <div className="flex mt-20  justify-center gap-10 items-start flex-col relative lg:flex-row pb-20">
 
               <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
@@ -80,8 +80,6 @@ function PricesAndPlans() {
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Per truck, Per month.</p>
                 <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">Back-Office Services</p>
               </div>
-
-
             </div>
 
 

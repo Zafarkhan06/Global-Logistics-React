@@ -19,10 +19,10 @@ function Footer() {
               <p className="raleway uppercase text-[#f5f1e4] text-center text-pretty">
                 up skill for a better future
               </p>
-              <p className="text-3xl md:text-5xl text-white text-center font-bold font-Raleway uppercase">
+              <p className="text-3xl md:text-4xl text-white text-center font-bold font-Monts uppercase">
               Always loaded and profitable
               </p>
-              <p className="text-sm tracking-tighter md:text-sm raleway lowercase text-center  text-[#eaecf3]">
+              <p className="text-sm tracking-tighter md:text-sm font-Raleway lowercase text-center  text-[#eaecf3]">
               Having some idea of what your company needs or what are your hauling plans and desires will help us provide the best dispatch service <br/> solution for your trucking company.​
 Complete the form now and start today!
               </p>

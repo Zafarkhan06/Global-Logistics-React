@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../asset/images/PGL WHITE BG PNG.png";
+import logo from "../../asset/images/logo-news.png";
 import { Container, Grid, Button } from "@mui/material";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function Footer() {
   const navigate = useNavigate();
   return (
-    <div className="bg-[#e87700] pt-24">
+    <div className="bg-[#cc3333] pt-24">
       <Container
         disableGutters={true}
         maxWidth="lg"
@@ -19,11 +19,12 @@ function Footer() {
               <p className="raleway uppercase text-[#f5f1e4] text-center text-pretty">
                 up skill for a better future
               </p>
-              <p className="text-3xl md:text-6xl text-white ultra text-center capitalize font-black">
-                Request more information
+              <p className="text-3xl md:text-5xl text-white text-center font-bold font-Raleway uppercase">
+              Always loaded and profitable
               </p>
               <p className="text-sm tracking-tighter md:text-sm raleway lowercase text-center  text-[#eaecf3]">
-              MULTIPLE SERVICES STRATEGICALLY PUT TOGETHER TO FORM A UNIQUE <br/> BUSINESS PROCESS OUTSOURCING ORGANIZATION.
+              Having some idea of what your company needs or what are your hauling plans and desires will help us provide the best dispatch service <br/> solution for your trucking company.​
+Complete the form now and start today!
               </p>
               <motion.div
                 whileTap={{ scale: 0.9 }}
@@ -36,7 +37,7 @@ function Footer() {
                 <Button
                   onClick={() => navigate("/contactus")}
                   className="raleway"
-                  variant="contained"
+                  variant="outlined"
                   sx={{
                     borderRadius: "100px",
                     px: 5,
@@ -45,10 +46,11 @@ function Footer() {
                     fontWeight: "bold",
                     textTransform: "capitalize !important",
                     letterSpacing: "2px",
-                    background:
-                      "linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%)",
-                    color: "#2e2a2a",
-
+                    border: "2px solid white",
+                    color: "white",
+                    "&:hover": {
+                      border: "2px solid white",
+                    },
                     width: { sm: "300px", md: "330px" },
                   }}
                 >
@@ -62,7 +64,7 @@ function Footer() {
             <hr />
             <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-4">
               <div className="md:w-4/12">
-                <LazyLoadImage  onClick={() => navigate("/home")} src={logo} alt="muntazim logo" className="h-16 cursor-pointer" />
+                <LazyLoadImage  onClick={() => navigate("/home")} src={logo} alt="muntazim logo" className="h-20 cursor-pointer" />
               </div>
               <div className="flex flex-col gap-3 pb-4 md:w-8/12 md:flex-row items-center justify-between">
                 <div className=" flex flex-wrap gap-8">

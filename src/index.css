@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 .svgContainer [data-color="1"] {
-    fill: #E87700;
+    fill: #cc3333;
   }
   .svgContainer [data-color="2"] {
     fill: #F7B774;

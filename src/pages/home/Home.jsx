@@ -22,7 +22,7 @@ function Home() {
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <div className="flex pt-6 items-center  flex-col lg:flex-row lg:items-start">
                 <div className="lg:w-6/12 lg:mt-10">
-                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Raleway leading-tight text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#e87700]">Most Reliable</span>  Dispatch Company in  North America.
+                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Raleway leading-tight text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#cc3333]">Most Reliable</span>  Dispatch Company in  North America.
                   </h1>
                   <p className="text-center md:text-start text-base lg:text-base xl:text-lg text-[#292929] font-Raleway mt-4 lg:mt-8">We find the best paying loads in the market.
                   </p>
@@ -41,11 +41,11 @@ function Home() {
                       textTransform: "none",
 
                       background:
-                        "#e87700",
+                        "#cc3333",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#e87700",
+                          "#cc3333",
                         boxShadow: "none",
                       },
                     }}> Hire a Dispatcher today</Button>
@@ -90,7 +90,7 @@ function Home() {
                 <div className="w-full md:w-1/2">
                   <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-start italic text-[#292929] ">Hit the road on your terms, you're the boss
                   </p>
-                  <p className="md:text-base text-sm lg:text-xl font-normal font-Raleway text-center md:text-start text-[#292929] ">Loads, rates and routes are your choice, no force dispatching. We make sure you get the best freight at the best rate and get paid on time. Documentation, prices and fees are disclosed upfront.
+                  <p className="md:text-base text-sm lg:text-xl font-normal font-Raleway text-center mt-5 md:text-start text-[#292929] ">Loads, rates and routes are your choice, no force dispatching. We make sure you get the best freight at the best rate and get paid on time. Documentation, prices and fees are disclosed upfront.
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
                     <Button variant="contained" className="font-Raleway" sx={{
@@ -105,11 +105,11 @@ function Home() {
                       textTransform: "none",
 
                       background:
-                        "#e87700",
+                        "#cc3333",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#e87700",
+                          "#cc3333",
                         boxShadow: "none",
                       },
                     }}> Click here to change routes</Button>
@@ -135,11 +135,11 @@ function Home() {
                       textTransform: "none",
                       px: 5,
                       background:
-                        "#e87700",
+                        "#cc3333",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#e87700",
+                          "#cc3333",
                         boxShadow: "none",
                       },
                     }}> Call Now!</Button>
@@ -161,37 +161,37 @@ function Home() {
                 <div className="flex justify-center gap-8 md:gap-16 items-start flex-col lg:flex-row">
                   <div className="w-full lg:w-1/4">
                     <Rating name="read-only" value={5} readOnly />
-                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway text-start text-[#E87700]">
+                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway text-start text-[#cc3333]">
                       Lopez Hauling Inc
                     </p>
-                    <p className="text-[#E87700] text-xs md:text-sm">
+                    <p className="text-[#cc3333] text-xs md:text-sm">
                       Our company, Lopez Hauling, just started back in July of 2021 and Genius Dispatch has been with us since the beginning. They have been so helpful with us being a start-up company and not knowing much about the industry to knowing where the money is and what we need to do to get it! Jessica, especially has been so amazing and her along with many others are very quick to respond and always take care of any issue we run into. To the point I don’t have to worry about much but making money!
                     </p>
                   </div>
                   <div className="w-full lg:w-1/4">
                     <Rating name="read-only" value={5} readOnly />
-                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway  text-start text-[#E87700]">
+                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway  text-start text-[#cc3333]">
                       Spartan Cargo LLC
                     </p>
-                    <p className="text-[#E87700] text-xs md:text-sm">
+                    <p className="text-[#cc3333] text-xs md:text-sm">
                       I can’t say enough to express my positive experience with this dispatch service. With the challenges of expenses going through the roof these days, having support from a dedicated staff is very important.
                     </p>
                   </div>
                   <div className="w-full lg:w-1/4">
                     <Rating name="read-only" value={5} readOnly />
-                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway text-start text-[#E87700]">
+                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway text-start text-[#cc3333]">
                       National Brothers Inc
                     </p>
-                    <p className="text-[#E87700] text-xs md:text-sm">
+                    <p className="text-[#cc3333] text-xs md:text-sm">
                       Our trucking company was in need of a dispatching company to dispatch our fleet of trucks and found Genius Dispatching in an article written about top dispatching companies. We have only worked with Genius for a short time but thus far, they have not disappointed. David and Jessica have both been readily available to answer questions our members have regarding their process. They have been nothing but professional and are quick to reach out to our team about concerns and/or issues. We look forward to continuing a great profitable relationship with their team.
                     </p>
                   </div>
                   <div className="w-full lg:w-1/4">
                     <Rating name="read-only" value={5} readOnly />
-                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway text-start text-[#E87700]">
+                    <p className="md:text-base text-sm font-bold lg:text-lg font-Raleway text-start text-[#cc3333]">
                       Venados Logistics LLC
                     </p>
-                    <p className="text-[#E87700] text-xs md:text-sm">
+                    <p className="text-[#cc3333] text-xs md:text-sm">
                       Excellent service that they provide in all aspects, Elisa who is my dispatch assigned always on the lookout for having the best-paid loads, always waiting for me to be loaded and unloaded on time and also pending along with Jessica who always pays us the total on time of the load plus the extra charges that we have for lumper or detention.
                     </p>
                   </div>
@@ -222,7 +222,7 @@ function Home() {
                 </p>
                 <div className="mt-16 flex flex-col md:flex-row gap-10 lg:gap-28 items-start">
                   <div className="flex justify-center items-center flex-col">
-                    <FolderCopyIcon sx={{ fontSize: "70px", color: "#e87700" }} />
+                    <FolderCopyIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
                     <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-[#292929]">Send Documents
                     </p>
                     <p className="text-lg font-Raleway text-center  italic text-[#292929]">MC Authority, Certificate of <br /> Insurance and W-9 Form
@@ -240,18 +240,18 @@ function Home() {
                         textTransform: "none",
                         px: 6,
                         background:
-                          "#e87700",
+                          "#cc3333",
                         color: "white",
                         "&:hover": {
                           background:
-                            "#e87700",
+                            "#cc3333",
                           boxShadow: "none",
                         },
                       }}> Send Documents</Button>
                     </div>
                   </div>
                   <div className="flex justify-center items-center flex-col">
-                    <HandshakeIcon sx={{ fontSize: "70px", color: "#e87700" }} />
+                    <HandshakeIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
                     <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-[#292929]">Sign Agreement
                     </p>
                     <p className="text-lg font-Raleway text-center  italic text-[#292929]">Sign a quick and easy dispatch <br /> service level agreement.
@@ -270,18 +270,18 @@ function Home() {
                         textTransform: "none",
                         px: 6,
                         background:
-                          "#e87700",
+                          "#cc3333",
                         color: "white",
                         "&:hover": {
                           background:
-                            "#e87700",
+                            "#cc3333",
                           boxShadow: "none",
                         },
                       }}> Request Agreement</Button>
                     </div>
                   </div>
                   <div className="flex justify-center items-center flex-col">
-                    <LocalShippingIcon sx={{ fontSize: "70px", color: "#e87700" }} />
+                    <LocalShippingIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
                     <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center  text-[#292929]">Hit the road
 
                     </p>
@@ -299,11 +299,11 @@ function Home() {
                         textTransform: "none",
                         px: 6,
                         background:
-                          "#e87700",
+                          "#cc3333",
                         color: "white",
                         "&:hover": {
                           background:
-                            "#e87700",
+                            "#cc3333",
                           boxShadow: "none",
                         },
                       }}> Hire a Dispatcher</Button>
@@ -334,11 +334,11 @@ function Home() {
                       textTransform: "none",
 
                       background:
-                        "#e87700",
+                        "#cc3333",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#e87700",
+                          "#cc3333",
                         boxShadow: "none",
                       },
                     }}> Hire a dispatcher today</Button>
@@ -358,7 +358,7 @@ function Home() {
           </Grid>
         </Container>
 
-        <div className="flex py-16 md:py-20 justify-center bg-[#e87700] items-start">
+        <div className="flex py-16 md:py-20 justify-center bg-[#cc3333] items-start">
           <Container
             disableGutters={true}
             maxWidth="lg"
@@ -384,11 +384,11 @@ function Home() {
                     textTransform: "none",
 
                     background:
-                      "#e87700",
+                      "#cc3333",
                     color: "white",
                     "&:hover": {
                       background:
-                        "#e87700",
+                        "#cc3333",
                       boxShadow: "none",
                       border: "2px solid black"
                     },
@@ -425,11 +425,11 @@ function Home() {
                       textTransform: "none",
                       px: 5,
                       background:
-                        "#e87700",
+                        "#cc3333",
                       color: "white",
                       "&:hover": {
                         background:
-                          "#e87700",
+                          "#cc3333",
                         boxShadow: "none",
                       },
                     }}> Start Today</Button>

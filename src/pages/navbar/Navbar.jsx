@@ -96,11 +96,11 @@ const NavBar = () => {
                     textTransform: "capitalize",
                     letterSpacing: "2px",
                     background:
-                      "#ff914c",
+                      "#cc3333",
                     color: "white",
                     "&:hover": {
                       background:
-                        "#ff914c",
+                        "#cc3333",
                       boxShadow: "none",
                     },
                   }}> Contact Us</Button>
@@ -161,12 +161,12 @@ const NavBar = () => {
                           textTransform: "capitalize",
                           letterSpacing: "2px",
                           background:
-                            "#ff914c",
+                            "#cc3333",
                           color: "#f5f1e4",
                           "&:hover": {
                             color: "#121212",
                             background:
-                              "#ff914c",
+                              "#cc3333",
                           },
                         }}> Contact Us</Button>
                       </div>

@@ -50,7 +50,7 @@ const NavBar = () => {
                     onClick={() => navigate("/")}
                     src={logo}
                     alt="muntazim logo"
-                    className="w-1/6 cursor-pointer"
+                    className="w-3/6 md:w-1/6 cursor-pointer"
                   />
                 </div>
                 <div className="lg:flex hidden gap-20 items-center ">
@@ -127,7 +127,7 @@ const NavBar = () => {
                     <MenuIcon sx={{ fontSize: "40px", color: "black" }} />
                   )}
                   {nav ? (
-                    <div className="fixed lg:hidden left-0 top-[92px] w-full max-h-fit border-b rounded-b-xl py-5 bg-white ease-in-out duration-500">
+                    <div className="fixed lg:hidden left-0 top-[82px] w-full max-h-fit border-b rounded-b-xl py-5 bg-white ease-in-out duration-500">
                       <p
                         onClick={() => navigate("/")}
                         className={`text-sm ${location.pathname === "/"
@@ -157,13 +157,13 @@ const NavBar = () => {
                         Contact Us
                       </p>
                       <div className="px-5 pt-5 flex justify-center" >
-
+                      <a href="tel:+18442644453">
                         <Button variant="contained" sx={{
                           px: 5,
                           py: 1,
                           fontSize: "1rem",
                           fontWeight: "semibold",
-                          width: "200px",
+                          
                           textTransform: "capitalize",
                           letterSpacing: "2px",
                           background:
@@ -174,7 +174,9 @@ const NavBar = () => {
                             background:
                               "#cc3333",
                           },
-                        }}> Contact Us</Button>
+                        }}> +1 (844) 264-4453
+                        </Button>
+                        </a>
                       </div>
                     </div>
                   ) : (

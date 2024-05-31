@@ -1,4 +1,4 @@
-import logo from "../../asset/images/logo-news.png";
+import logo from "../../asset/images/PGL_BLACK_BG_PNG1.png";
 import { Container, Grid, Button } from "@mui/material";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
@@ -67,11 +67,9 @@ function Footer() {
             <div className="flex justify-between items-center mt-10">
               <div className="flex w-1/4 items-center justify-start">
                 <div className="">
-                  <LazyLoadImage onClick={() => navigate("/")} src={logo} alt="muntazim logo" className=" cursor-pointer" />
+                  <LazyLoadImage onClick={() => navigate("/")} src={logo} alt="muntazim logo" className="rounded-full w-3/12 cursor-pointer" />
                 </div>
-                <div className="">
-                  <LazyLoadImage onClick={() => navigate("/")} src={docusign} alt="muntazim logo" className="cursor-pointer" />
-                </div>
+               
               </div>
               <div><p className="hover:text-black cursor-pointer font-Raleway text-white">Email: info@perfectgloballogistics.com</p>
                 <p className="hover:text-black cursor-pointer font-Raleway text-white text-right mt-3">Phone: +1 (844) 264-4453</p>
@@ -101,7 +99,7 @@ function Footer() {
             <hr />
             <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-4">
               <div className="md:w-4/12">
-                <LazyLoadImage onClick={() => navigate("/")} src={logo} alt="muntazim logo" className="w-2/6 cursor-pointer" />
+                <LazyLoadImage onClick={() => navigate("/")} src={logo} alt="muntazim logo" className="w-2/12 cursor-pointer" />
               </div>
               <div className=" flex flex-wrap gap-8">
                   <motion.p

@@ -59,7 +59,7 @@ const NavBar = () => {
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/")}
                     className={`${location.pathname === "/"
-                      ? "text-[#757575]"
+                      ? "text-[#cc3333]"
                       : "text-black"
                       } font-Raleway font-medium capitalize cursor-pointer hover:text-[#757575]`}
                   >
@@ -70,7 +70,7 @@ const NavBar = () => {
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/price-and-plans")}
                     className={` ${window.location.href.includes("/price-and-plans")
-                      ? "text-[#757575]"
+                      ? "text-[#cc3333]"
                       : "text-black"
                       } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
                   >
@@ -82,7 +82,7 @@ const NavBar = () => {
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/contactus")}
                     className={` ${window.location.href.includes("/contactus")
-                      ? "text-[#757575]"
+                      ? "text-[#cc3333]"
                       : "text-black"
                       } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
                   >
@@ -129,7 +129,7 @@ const NavBar = () => {
                       <p
                         onClick={() => navigate("/")}
                         className={`text-sm ${window.location.href.includes("/")
-                          ? "text-[#757575]"
+                          ? "text-[#cc3333]"
                           : "text-black"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
@@ -138,7 +138,7 @@ const NavBar = () => {
                       <p
                         onClick={() => navigate("/price-and-plans")}
                         className={`text-sm mt-3 ${window.location.href.includes("/price-and-plans")
-                          ? "text-[#757575]"
+                          ? "text-[#cc3333]"
                           : "text-black"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
@@ -148,7 +148,7 @@ const NavBar = () => {
                       <p
                         onClick={() => navigate("/contactus")}
                         className={`text-sm mt-3 ${window.location.href.includes("/contactus")
-                          ? "text-[#757575]"
+                          ? "text-[#cc3333]"
                           : "text-black"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >

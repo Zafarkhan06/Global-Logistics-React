@@ -36,20 +36,20 @@ Complete the form now and start today!
               >
                 <Button
                   onClick={() => navigate("/contactus")}
-                  className="raleway"
+                  className="font-Raleway"
                   variant="outlined"
                   sx={{
                     borderRadius: "100px",
                     px: 5,
                     py: 1,
-                    fontSize: "1.2rem",
-                    fontWeight: "bold",
+                    fontSize: "1rem",
+                    fontWeight: "semibold",
                     textTransform: "capitalize !important",
                     letterSpacing: "2px",
-                    border: "2px solid white",
+                    border: "1px solid white",
                     color: "white",
                     "&:hover": {
-                      border: "2px solid white",
+                      border: "1px solid white",
                     },
                     width: { sm: "300px", md: "330px" },
                   }}

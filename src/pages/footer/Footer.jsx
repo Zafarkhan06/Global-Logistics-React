@@ -64,7 +64,7 @@ Complete the form now and start today!
             <hr />
             <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-4">
               <div className="md:w-4/12">
-                <LazyLoadImage  onClick={() => navigate("/home")} src={logo} alt="muntazim logo" className="h-20 cursor-pointer" />
+                <LazyLoadImage  onClick={() => navigate("/")} src={logo} alt="muntazim logo" className="h-20 cursor-pointer" />
               </div>
               <div className="flex flex-col gap-3 pb-4 md:w-8/12 md:flex-row items-center justify-between">
                 <div className=" flex flex-wrap gap-8">
@@ -74,9 +74,9 @@ Complete the form now and start today!
                       transition: { duration: 1 },
                       scale: 1.12,
                     }}
-                    onClick={() => navigate("/home")}
+                    onClick={() => navigate("/")}
                     whileTap={{ scale: 0.9 }}
-                    className="font-Raleway cursor-pointer hover:text-[#F8D442] text-white capitalize"
+                    className="font-Raleway cursor-pointer hover:text-black text-white capitalize"
                   >
                     Home
                   </motion.p>
@@ -88,7 +88,7 @@ Complete the form now and start today!
                     }}
                     onClick={() => navigate("/outbound")}
                     whileTap={{ scale: 0.9 }}
-                    className="hover:text-[#F8D442] cursor-pointer font-Raleway text-white capitalize"
+                    className="hover:text-black cursor-pointer font-Raleway text-white capitalize"
                   >
                     Price & Plans
                   </motion.p>
@@ -101,7 +101,7 @@ Complete the form now and start today!
                     }}
                     onClick={() => navigate("/contactus")}
                     whileTap={{ scale: 0.9 }}
-                    className="hover:text-[#F8D442] cursor-pointer font-Raleway text-white capitalize"
+                    className="hover:text-black cursor-pointer font-Raleway text-white capitalize"
                   >
                     contact us
                   </motion.p>

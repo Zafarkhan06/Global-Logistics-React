@@ -6,8 +6,12 @@ import { Container, Grid, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
+import {  useLocation } from 'react-router-dom';
+
 const NavBar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
   const [nav, setNav] = useState(false);
   const menuRef = useRef(null); // Ref for the menu icon container
 
@@ -43,7 +47,7 @@ const NavBar = () => {
               <div className="flex justify-between py-2 items-center  mb-3 lg:mb-0 ">
                 <div className="w-2/6">
                   <LazyLoadImage
-                    onClick={() => navigate("/home")}
+                    onClick={() => navigate("/")}
                     src={logo}
                     alt="muntazim logo"
                     className="h-16 w-16 cursor-pointer"
@@ -53,8 +57,8 @@ const NavBar = () => {
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
-                    onClick={() => navigate("/home")}
-                    className={`${window.location.href.includes("/home")
+                    onClick={() => navigate("/")}
+                    className={`${location.pathname === "/"
                       ? "text-[#757575]"
                       : "text-black"
                       } font-Raleway font-medium capitalize cursor-pointer hover:text-[#757575]`}
@@ -64,8 +68,8 @@ const NavBar = () => {
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
-                    onClick={() => navigate("/outbound")}
-                    className={` ${window.location.href.includes("/outbound")
+                    onClick={() => navigate("/price-and-plans")}
+                    className={` ${window.location.href.includes("/price-and-plans")
                       ? "text-[#757575]"
                       : "text-black"
                       } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
@@ -123,8 +127,8 @@ const NavBar = () => {
                   {nav ? (
                     <div className="fixed lg:hidden left-0 top-[92px] w-full max-h-fit border-b rounded-b-xl py-5 bg-white ease-in-out duration-500">
                       <p
-                        onClick={() => navigate("/home")}
-                        className={`text-sm ${window.location.href.includes("/home")
+                        onClick={() => navigate("/")}
+                        className={`text-sm ${window.location.href.includes("/")
                           ? "text-[#757575]"
                           : "text-black"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
@@ -132,8 +136,8 @@ const NavBar = () => {
                         Home
                       </p>
                       <p
-                        onClick={() => navigate("/outbound")}
-                        className={`text-sm mt-3 ${window.location.href.includes("/outbound")
+                        onClick={() => navigate("/price-and-plans")}
+                        className={`text-sm mt-3 ${window.location.href.includes("/price-and-plans")
                           ? "text-[#757575]"
                           : "text-black"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}

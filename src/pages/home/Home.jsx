@@ -22,7 +22,7 @@ function Home() {
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <div className="flex pt-6 items-center  flex-col lg:flex-row lg:items-start">
                 <div className="lg:w-6/12 lg:mt-10">
-                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Raleway leading-tight text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#cc3333]">Most Reliable</span>  Dispatch Company in  North America.
+                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Monts leading-tight text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#cc3333]">Most Reliable</span>  Dispatch Company in  North America.
                   </h1>
                   <p className="text-center md:text-start text-base lg:text-base xl:text-lg text-[#292929] font-Raleway mt-4 lg:mt-8">We find the best paying loads in the market.
                   </p>
@@ -73,7 +73,7 @@ function Home() {
                 <SvgComponent className="absolute top-0 w-1/3 opacity-40 z-0 -left-20" />
                 <div className="flex items-end gap-4 mt-10">
                   <p className="md:text-7xl text-6xl lg:text-8xl font-black font-Inter text-[#292929] ">53'</p>
-                  <p className="md:text-3xl text-xl lg:text-4xl font-bold font-Raleway italic text-[#292929] ">Dry Vans, Reefers, <br /> and Flatbeds Only.</p>
+                  <p className="md:text-3xl text-xl lg:text-4xl font-bold font-Monts italic text-[#292929] ">Dry Vans, Reefers, <br /> and Flatbeds Only.</p>
                 </div>
                 <p className="text-lg font-medium font-Raleway text-center md:text-start text-[#292929] ">A Bigger <br className="hidden md:block" /> Equipment makes  <br className="hidden md:block" /> you more Money!</p>
                 <SvgComponent className="absolute top-30 w-1/3 opacity-40 z-0 " />
@@ -88,7 +88,7 @@ function Home() {
                   />
                 </div>
                 <div className="w-full md:w-1/2">
-                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-start italic text-[#292929] ">Hit the road on your terms, you're the boss
+                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-start italic text-[#292929] ">Hit the road on your terms, you're the boss
                   </p>
                   <p className="md:text-base text-sm lg:text-xl font-normal font-Raleway text-center mt-5 md:text-start text-[#292929] ">Loads, rates and routes are your choice, no force dispatching. We make sure you get the best freight at the best rate and get paid on time. Documentation, prices and fees are disclosed upfront.
                   </p>
@@ -120,7 +120,7 @@ function Home() {
               <div className="truck-bg rounded-2xl shadow-2xl mt-20 realtive">
                 <div className="py-20 px-6 md:px-20 flex flex-col  md:items-end">
 
-                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-right italic text-white">Call us today, get loaded <br /> & be profitable now
+                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-right italic text-white">Call us today, get loaded <br /> & be profitable now
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
                     <Button variant="contained" className="font-Raleway" sx={{
@@ -218,7 +218,7 @@ function Home() {
           <Grid container sx={{ justifyContent: "center" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <div className="lg:mt-44 md:mt-60 mt-36 flex flex-col justify-center items-center">
-                <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center  italic text-[#292929]">Getting started is easy
+                <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center  italic text-[#292929]">Getting started is easy
                 </p>
                 <div className="mt-16 flex flex-col md:flex-row gap-10 lg:gap-28 items-start">
                   <div className="flex justify-center items-center flex-col">
@@ -315,7 +315,7 @@ function Home() {
                 <SvgComponent className="absolute -top-10 right-96 w-20 opacity-40 z-0 " />
 
                 <div className="w-full md:w-5/12">
-                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-start italic text-[#292929] ">Top dedicated truck <br />dispatch service
+                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-start italic text-[#292929] ">Top dedicated truck <br />dispatch service
                   </p>
                   <p className="md:text-sm mt-6 text-xs lg:text-base font-normal font-Raleway text-center md:text-start text-[#292929] ">As truck dispatchers providing freight dispatching services, we take a low percentage of your rate. This is an incentive to negotiate high rates for you. The more money you make, the more money we make.
                   </p>
@@ -366,7 +366,7 @@ function Home() {
           >
             <Grid container sx={{ justifyContent: "center" }}>
               <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center italic text-white ">What is truck dispatch service?
+                <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center italic text-white ">What is truck dispatch service?
                 </p>
                 <p className="md:text-sm mt-6 text-xs lg:text-base font-normal font-Raleway text-center text-white md: px-16 px-8 lg:px-28">A truck dispatch services help truck drivers and owner operators who have their own trucking company manage the load booking and back-office processes of running a trucking company. Some dispatchers specialize only in booking loads, while others, like Genius Dispatch, offer a wide variety of services such as invoice management and detention requests.
                 </p>
@@ -407,7 +407,7 @@ function Home() {
             <Grid container sx={{ justifyContent: "center" }}>
               <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                 <div className=" flex flex-col  md:items-start">
-                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Raleway text-center md:text-start italic text-white">Genius Dispatch is your<br /> freight planning solution.
+                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-start italic text-white">Genius Dispatch is your<br /> freight planning solution.
                   </p>
                   <p className="text-base text-white w-full lg:w-2/6 mt-10">
                     Our services are mainly for owner operators, independent truckers & carriers with their own DOT or MC authority. It’s in our best interest for us to find the best paying loads available for you. We dispatch dry-vans, reefers , flatbeds. We find you the best truck loads in the US. We help you improve your profits and experience. Whether you are looking for your next load or you need a load that takes you home, Genius Dispatch is committed to your goals. For us to be successful, you must be successful first. We are the best dispatch service in the US.

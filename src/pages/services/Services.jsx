@@ -14,8 +14,10 @@ function PricesAndPlans() {
             </h1>
             <p className="text-lg font-Raleway text-[#292929] text-center mt-10">Streamline Your Operations with Our Comprehensive FMCSA & DOT Compliance Solutions.</p>
             <p className="text-lg font-Raleway text-[#292929] text-center">We keep up with the latest regulations and help you stay compliant, minimizing the risk of fines, penalties, and other consequences. With our services, you can focus on your core business while we handle all your FMCSA and DOT compliance needs.</p>
-            <div className="flex mt-20 justify-between gap-10 items-center">
-              <div className="border shadow-2xl border-red-400">
+            
+            
+            <div className="flex mt-20 justify-between gap-10 items-center flex-col lg:flex-row pb-20">
+              <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
                   <h1 className="text-[96px] tracking-normal font-bold italic text-white font-Monts leading-normal text-center">7%
                   </h1>
@@ -23,7 +25,7 @@ function PricesAndPlans() {
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Flat rate per load.</p>
                 <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">1 Truck</p>
               </div>
-              <div className="border shadow-2xl border-red-400">
+              <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
                   <h1 className="text-[96px] tracking-normal font-bold italic text-white font-Monts leading-normal text-center">6%
                   </h1>
@@ -31,7 +33,7 @@ function PricesAndPlans() {
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Flat rate per load.</p>
                 <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">2-3 Trucks</p>
               </div>
-              <div className="border shadow-2xl border-red-400">
+              <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
                   <h1 className="text-[96px] tracking-normal font-bold italic text-white font-Monts leading-normal text-center">5%
                   </h1>
@@ -39,7 +41,7 @@ function PricesAndPlans() {
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Flat rate per load.</p>
                 <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">+3 Trucks</p>
               </div>
-              <div className="border shadow-2xl border-red-400">
+              <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
                   <h1 className="text-[96px] tracking-normal font-bold italic text-white font-Monts leading-normal text-center">$60
                   </h1>

@@ -50,7 +50,7 @@ const NavBar = () => {
                     onClick={() => navigate("/")}
                     src={logo}
                     alt="muntazim logo"
-                    className="h-16 w-16 cursor-pointer"
+                    className="w-1/6 cursor-pointer"
                   />
                 </div>
                 <div className="lg:flex hidden gap-20 items-center ">
@@ -90,13 +90,14 @@ const NavBar = () => {
                   </motion.p>
                 </div>
                 <div className="hidden lg:block">
-                  <Button variant="contained" sx={{
-                    px: 5,
+                  <a href="tel:+18442644453">
+                  <Button variant="contained" className="font-Monts" sx={{
+                    px: 3,
                     py: 1,
                     boxShadow: "none",
                     fontSize: "1rem",
-                    fontWeight: "semibold",
-                    width: "200px",
+                    fontWeight: "bold",
+                   
                     textTransform: "capitalize",
                     letterSpacing: "2px",
                     background:
@@ -107,7 +108,8 @@ const NavBar = () => {
                         "#cc3333",
                       boxShadow: "none",
                     },
-                  }}> Contact Us</Button>
+                  }}> +1(844)264-4453</Button>
+                  </a>
                 </div>
 
                 {/* Mobile Navigation Icon */}
@@ -128,7 +130,7 @@ const NavBar = () => {
                     <div className="fixed lg:hidden left-0 top-[92px] w-full max-h-fit border-b rounded-b-xl py-5 bg-white ease-in-out duration-500">
                       <p
                         onClick={() => navigate("/")}
-                        className={`text-sm ${window.location.href.includes("/")
+                        className={`text-sm ${location.pathname === "/"
                           ? "text-[#cc3333]"
                           : "text-black"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}

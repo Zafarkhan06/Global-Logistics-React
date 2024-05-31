@@ -9,7 +9,9 @@ import FolderCopyIcon from '@mui/icons-material/FolderCopy';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import talkingGirl from "../../asset/images/talking-girl.png";
+import { useNavigate } from "react-router";
 function Home() {
+const navigate = useNavigate();
   return (
     <>
       <div className="min-h-screen bg-white">
@@ -29,26 +31,27 @@ function Home() {
                   <p className="text-center md:text-start  text-base lg:text-base xl:text-lg text-[#292929] font-Raleway">Get a dedicated dispatcher assigned for you and don't worry <br /> any more about spending time looking for loads or empty miles.
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                    <Button variant="contained" className="font-Raleway" sx={{
+                    <Button variant="contained" onClick={() => navigate("/contactus")}
+                      className="font-Raleway" sx={{
 
-                      py: 1,
-                      boxShadow: "none",
-                      fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
-                      fontWeight: "bold",
-                      width: "220px",
-                      letterSpacing: "0px",
-                      fontFamily: "Raleway",
-                      textTransform: "none",
+                        py: 1,
+                        boxShadow: "none",
+                        fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
+                        fontWeight: "bold",
+                        width: "220px",
+                        letterSpacing: "0px",
+                        fontFamily: "Raleway",
+                        textTransform: "none",
 
-                      background:
-                        "#cc3333",
-                      color: "white",
-                      "&:hover": {
                         background:
                           "#cc3333",
-                        boxShadow: "none",
-                      },
-                    }}> Hire a Dispatcher today</Button>
+                        color: "white",
+                        "&:hover": {
+                          background:
+                            "#cc3333",
+                          boxShadow: "none",
+                        },
+                      }}> Hire a Dispatcher today</Button>
                   </div>
                 </div>
                 <div className="lg:w-6/12 mt-32 md:mt-28 relative">
@@ -93,7 +96,7 @@ function Home() {
                   <p className="md:text-base text-sm lg:text-xl font-normal font-Raleway text-center mt-5 md:text-start text-[#292929] ">Loads, rates and routes are your choice, no force dispatching. We make sure you get the best freight at the best rate and get paid on time. Documentation, prices and fees are disclosed upfront.
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                    <Button variant="contained" className="font-Raleway" sx={{
+                    <Button variant="contained" onClick={() => navigate("/price-and-plans")} className="font-Raleway" sx={{
 
                       py: 1,
                       boxShadow: "none",
@@ -123,7 +126,8 @@ function Home() {
                   <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-right italic text-white">Call us today, get loaded <br /> & be profitable now
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                    <Button variant="contained" className="font-Raleway" sx={{
+                    <a href="tel:+18442644453">
+                    <Button variant="contained"  className="font-Raleway" sx={{
 
                       py: 1,
                       boxShadow: "none",
@@ -143,6 +147,7 @@ function Home() {
                         boxShadow: "none",
                       },
                     }}> Call Now!</Button>
+                    </a>
                   </div>
                 </div>
 
@@ -288,7 +293,7 @@ function Home() {
                     <p className="text-lg font-Raleway text-center  italic text-[#292929]">We start dispatching<br /> your truck immediately.
                     </p>
                     <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                      <Button variant="contained" className="font-Raleway" sx={{
+                      <Button onClick={() => navigate("/contactus")} variant="contained" className="font-Raleway" sx={{
                         py: 1,
                         boxShadow: "none",
                         fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
@@ -322,7 +327,7 @@ function Home() {
                   <p className="md:text-sm mt-3 text-xs lg:text-base font-normal font-Raleway text-center md:text-start text-[#292929] ">There are NO contracts. It is difficult to be profitable and that is why we charge only a small Percentage Fee for any premium load we find. Other dispatchers and brokers charge much higher fees and do not care about the service they provide to their drivers, we believe in long term relationships, our main focus is a great truck dispatch and customer service.
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                    <Button variant="contained" className="font-Raleway" sx={{
+                    <Button onClick={() => navigate("/price-and-plans")} variant="contained" className="font-Raleway" sx={{
 
                       py: 1,
                       boxShadow: "none",
@@ -371,7 +376,7 @@ function Home() {
                 <p className="md:text-sm mt-6 text-xs lg:text-base font-normal font-Raleway text-center text-white md: px-16 px-8 lg:px-28">A truck dispatch services help truck drivers and owner operators who have their own trucking company manage the load booking and back-office processes of running a trucking company. Some dispatchers specialize only in booking loads, while others, like Genius Dispatch, offer a wide variety of services such as invoice management and detention requests.
                 </p>
                 <div className="mt-6 flex justify-center lg:mt-10">
-                  <Button variant="outlined" className="font-Raleway" sx={{
+                  <Button onClick={() => navigate("/contactus")} variant="outlined" className="font-Raleway" sx={{
 
                     py: 1,
                     boxShadow: "none",
@@ -413,7 +418,7 @@ function Home() {
                     Our services are mainly for owner operators, independent truckers & carriers with their own DOT or MC authority. It’s in our best interest for us to find the best paying loads available for you. We dispatch dry-vans, reefers , flatbeds. We find you the best truck loads in the US. We help you improve your profits and experience. Whether you are looking for your next load or you need a load that takes you home, Genius Dispatch is committed to your goals. For us to be successful, you must be successful first. We are the best dispatch service in the US.
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                    <Button variant="contained" className="font-Raleway" sx={{
+                    <Button onClick={() => navigate("/price-and-plans")} variant="contained" className="font-Raleway" sx={{
 
                       py: 1,
                       boxShadow: "none",

@@ -6,6 +6,7 @@ import MarkEmailReadOutlinedIcon from "@mui/icons-material/MarkEmailReadOutlined
 import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 import WorkIcon from '@mui/icons-material/Work';
 import SvgComponent from "../components/SvgComponent";
+import contactPerson from "../../asset/images/contact-person.png";
 function ContactUs() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
@@ -138,6 +139,30 @@ function ContactUs() {
 
   return (
     <div className="bg-[#e8e6e6] min-h-screen">
+      <div className="contact_person py-40">
+      <Container
+        disableGutters={true}
+        maxWidth="lg"
+        sx={{ px: { xs: "10px", lg: "0px" } }}
+      >
+        <Grid container sx={{ justifyContent: "center" }}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <div className="relative">
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={itemVariants}
+              >
+                <h1 className="text-4xl lg:text-5xl xl:text-[58px] tracking-normal font-bold italic text-white font-Monts leading-normal text-center   mt-20">Contact Us
+                </h1>
+                <p className="text-2xl font-semibold font-Raleway text-white text-center mt-5"> Need an expert <span className="text-black">Dispatcher</span> ? you are more than welcomed <br />to leave your contact info and we will be in touch shortly.</p>
+
+              </motion.div>
+            </div>
+          </Grid>
+        </Grid>
+      </Container>
+      </div>
 
       <Container
         disableGutters={true}
@@ -147,7 +172,7 @@ function ContactUs() {
         <Grid container sx={{ justifyContent: "center" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <div className="relative">
-            <SvgComponent className="absolute -top-10 -left-10 w-44 opacity-20 md:opacity-60 " />
+            <SvgComponent className="absolute -top-10 -left-10 w-44 opacity-20 md:opacity-40 " />
             <SvgComponent className="absolute top-10 -right-10 w-44  opacity-10 md:opacity-40 " />
               <motion.div
                 initial="hidden"
@@ -156,8 +181,7 @@ function ContactUs() {
               >
                 <h1 className="text-2xl lg:text-3xl xl:text-[48px] tracking-normal font-bold italic text-[#292929] font-Monts leading-normal text-center   mt-20">Get in  <span className="text-[#cc3333]">Touch</span>  with us
                 </h1>
-                <p className="text-lg font-Raleway text-[#292929] text-center mt-10">Streamline Your Operations with Our Comprehensive FMCSA & DOT Compliance Solutions.</p>
-                <p className="text-2xl font-semibold font-Raleway text-[#292929] text-center mt-5"> Need an expert <span className="text-[#cc3333]">Dispatcher</span> ? you are more than welcomed <br />to leave your contact info and we will be in touch shortly.</p>
+                <p className="text-2xl font-semibold font-Raleway text-[#292929] text-center mt-5">Streamline Your Operations with Our Comprehensive FMCSA & DOT Compliance Solutions.</p>
               </motion.div>
             </div>
           </Grid>
@@ -177,34 +201,10 @@ function ContactUs() {
               viewport={{ once: true, amount: 0.3 }}
               className="flex flex-col md:flex-row relative gap-5  mt-10 md:mt-20"
             >
+              
               <motion.div
                 variants={smallportionVariants}
-                className="md:w-1/3 border-b shadow-2xl flex items-center bg-[#cc3333] px-5 rounded-lg gap-5 md:border-b-0 md:border-r border-[#FEAF00] py-5"
-              >
-                <div className="bg-black rounded-full p-4">
-                <SvgComponent className="absolute top-44 hidden md:block -right-20 w-96  opacity-40 " />
-                <SvgComponent className="absolute top-44 hidden md:block left-60 w-20  opacity-40 " />
-                <SvgComponent className="absolute top-96 -left-60 w-96  opacity-40 " />
-
-                  <AddLocationAltOutlinedIcon
-                    sx={{
-                      color: "white ",
-                      fontSize: { sm: "35px", md: "45px" },
-                    }}
-                  />
-                </div>
-                <div>
-                  <p className="text-xl text-start border-[#FEAF00] text-white font-Monts  capitalize">
-                    Office Location
-                  </p>
-                  <p className="raleway mt-2 text-sm  text-[#f5f1e4] ">
-                    Office #247, 2nd Floor, Main Saidpur Road, Rawalpindi.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                variants={smallportionVariants}
-                className="md:w-1/3 border-b shadow-2xl md:border-b-0 bg-[#cc3333] px-5 rounded-lg flex items-center gap-5 md:border-r md:pl-5 border-[#FEAF00] py-5"
+                className="md:w-1/2 border-b shadow-2xl md:border-b-0 bg-[#cc3333] px-5 rounded-lg flex items-center gap-5 md:border-r md:pl-5 border-[#FEAF00] py-5"
               >
                 <div className="bg-black rounded-full p-4">
                   <SupportAgentOutlinedIcon
@@ -219,13 +219,13 @@ function ContactUs() {
                     Phone Number
                   </p>
                   <p className="raleway mt-2 text-sm   text-[#f5f1e4] ">
-                    0312-7777129
+                  +1 (844) 264-4453
                   </p>
                 </div>
               </motion.div>
               <motion.div
                 variants={smallportionVariants}
-                className="md:w-1/3  md:pl-5 shadow-2xl  py-5 flex bg-[#cc3333] px-5 rounded-lg items-center gap-5"
+                className="md:w-1/2  md:pl-5 shadow-2xl  py-5 flex bg-[#cc3333] px-5 rounded-lg items-center gap-5"
               >
                 <div className="bg-black rounded-full p-4">
                   <MarkEmailReadOutlinedIcon
@@ -239,9 +239,9 @@ function ContactUs() {
                   <p className="text-xl text-start border-[#FEAF00] font-Monts text-white capitalize">
                     Email Address
                   </p>
-                  <a href="mailto:zee@thelightcommunications.com">
+                  <a href="mailto:info@perfectgloballogistics.com">
                     <p className="raleway mt-2 text-sm  text-[#f5f1e4] ">
-                      Zee@thelightcommunications.com
+                    info@perfectgloballogistics.com
                     </p>
                   </a>
                 </div>

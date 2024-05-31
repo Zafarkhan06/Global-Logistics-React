@@ -171,3 +171,10 @@
   background-position: cover;
   background-repeat: no-repeat;
 }
+
+.contact_person {
+  background-image: url("./asset/images/person-contact.png");
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+}

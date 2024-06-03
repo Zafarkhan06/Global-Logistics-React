@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
-import logo from "../../asset/images/PGL WHITE BG PNG.png";
+import logo from "../../asset/images/PGL BLACK BG PNG.png";
 import { Container, Grid, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -36,7 +36,7 @@ const NavBar = () => {
   }, []);
   return (
     <>
-      <div className=" bg-white border-b">
+      <div className=" bg-black border-b">
         <Container
           disableGutters={true}
           maxWidth="lg"
@@ -60,7 +60,7 @@ const NavBar = () => {
                     onClick={() => navigate("/")}
                     className={`${location.pathname === "/"
                       ? "text-[#cc3333]"
-                      : "text-black"
+                      : "text-white"
                       } font-Raleway font-medium capitalize cursor-pointer hover:text-[#757575]`}
                   >
                     Home
@@ -71,7 +71,7 @@ const NavBar = () => {
                     onClick={() => navigate("/price-and-plans")}
                     className={` ${window.location.href.includes("/price-and-plans")
                       ? "text-[#cc3333]"
-                      : "text-black"
+                      : "text-white"
                       } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
                   >
                     Price & Plans
@@ -83,7 +83,7 @@ const NavBar = () => {
                     onClick={() => navigate("/contactus")}
                     className={` ${window.location.href.includes("/contactus")
                       ? "text-[#cc3333]"
-                      : "text-black"
+                      : "text-white"
                       } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
                   >
                     Contact Us
@@ -132,7 +132,7 @@ const NavBar = () => {
                         onClick={() => navigate("/")}
                         className={`text-sm ${location.pathname === "/"
                           ? "text-[#cc3333]"
-                          : "text-black"
+                          : "text-white"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Home
@@ -141,7 +141,7 @@ const NavBar = () => {
                         onClick={() => navigate("/price-and-plans")}
                         className={`text-sm mt-3 ${window.location.href.includes("/price-and-plans")
                           ? "text-[#cc3333]"
-                          : "text-black"
+                          : "text-white"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Price & Plans
@@ -151,7 +151,7 @@ const NavBar = () => {
                         onClick={() => navigate("/contactus")}
                         className={`text-sm mt-3 ${window.location.href.includes("/contactus")
                           ? "text-[#cc3333]"
-                          : "text-black"
+                          : "text-white"
                           }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Contact Us

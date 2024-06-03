@@ -1,4 +1,4 @@
-import logo from "../../asset/images/PGL_BLACK_BG_PNG1.png";
+import logo from "../../asset/images/PGL BLACK BG PNG.png";
 import { Container, Grid, Button } from "@mui/material";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
@@ -9,7 +9,7 @@ import SubscriptionsRoundedIcon from '@mui/icons-material/SubscriptionsRounded';
 function Footer() {
   const navigate = useNavigate();
   return (
-    <div className="bg-[#cc3333] pt-16">
+    <div className="bg-black pt-16">
       <Container
         disableGutters={true}
         maxWidth="lg"
@@ -32,7 +32,7 @@ function Footer() {
                     }}
                     onClick={() => navigate("/")}
                     whileTap={{ scale: 0.9 }}
-                    className="font-Raleway cursor-pointer hover:text-black text-white capitalize"
+                    className="font-Raleway cursor-pointer hover:text-[#cc3333] text-white capitalize"
                   >
                     Home
                   </motion.p>
@@ -44,7 +44,7 @@ function Footer() {
                     }}
                     onClick={() => navigate("/outbound")}
                     whileTap={{ scale: 0.9 }}
-                    className="hover:text-black cursor-pointer font-Raleway text-white capitalize"
+                    className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white capitalize"
                   >
                     Price & Plans
                   </motion.p>
@@ -57,7 +57,7 @@ function Footer() {
                     }}
                     onClick={() => navigate("/contactus")}
                     whileTap={{ scale: 0.9 }}
-                    className="hover:text-black cursor-pointer font-Raleway text-white capitalize"
+                    className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white capitalize"
                   >
                     contact us
                   </motion.p>
@@ -72,8 +72,8 @@ function Footer() {
 
               </div>
               <div>
-                <p className="hover:text-black cursor-pointer text-center md:text-right font-Raleway text-white">Email: info@perfectgloballogistics.com</p>
-                <p className="hover:text-black cursor-pointer font-Raleway text-white text-center md:text-right mt-3">Phone: +1 (844) 264-4453</p>
+                <p className="hover:text-[#cc3333] cursor-pointer text-center md:text-right font-Raleway text-white">Email: info@perfectgloballogistics.com</p>
+                <p className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white text-center md:text-right mt-3">Phone: +1 (844) 264-4453</p>
 
               </div>
             </div>
@@ -83,18 +83,18 @@ function Footer() {
                   href="https://www.facebook.com/perfectgloballogistics"
                   target="_blank"
                 >
-                  <FacebookRoundedIcon sx={{ color: "white", fontSize: "40px" }} />
+                  <FacebookRoundedIcon sx={{ color: "#cc3333", fontSize: "40px" }} />
                 </a>
                 <a
                   href="http://youtube.com/@perfectgloballogistics"
                   target="_blank"
                 >
-                  <SubscriptionsRoundedIcon sx={{ color: "white", fontSize: "40px" }} />
+                  <SubscriptionsRoundedIcon sx={{ color: "#cc3333", fontSize: "40px" }} />
                 </a>
               </div>
               <div>
-                <p className="hover:text-black text-center md:text-right cursor-pointer font-Raleway text-white mt-3">Working Hours: 24 hours</p>
-                <p className="hover:text-black text-center md:text-right cursor-pointer font-Raleway text-white mt-3">​Dispatchers: 24/7</p>
+                <p className="hover:text-[#cc3333] text-center md:text-right cursor-pointer font-Raleway text-white mt-3">Working Hours: 24 hours</p>
+                <p className="hover:text-[#cc3333] text-center md:text-right cursor-pointer font-Raleway text-white mt-3">​Dispatchers: 24/7</p>
               </div>
             </div>
             <hr />
@@ -111,7 +111,7 @@ function Footer() {
                   }}
                   onClick={() => navigate("/")}
                   whileTap={{ scale: 0.9 }}
-                  className="font-Raleway cursor-pointer hover:text-black text-white capitalize"
+                  className="font-Raleway cursor-pointer hover:text-[#cc3333] text-white capitalize"
                 >
                   Home
                 </motion.p>
@@ -123,7 +123,7 @@ function Footer() {
                   }}
                   onClick={() => navigate("/outbound")}
                   whileTap={{ scale: 0.9 }}
-                  className="hover:text-black cursor-pointer font-Raleway text-white capitalize"
+                  className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white capitalize"
                 >
                   Price & Plans
                 </motion.p>
@@ -136,7 +136,7 @@ function Footer() {
                   }}
                   onClick={() => navigate("/contactus")}
                   whileTap={{ scale: 0.9 }}
-                  className="hover:text-black cursor-pointer font-Raleway text-white capitalize"
+                  className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white capitalize"
                 >
                   contact us
                 </motion.p>

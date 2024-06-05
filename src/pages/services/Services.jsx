@@ -14,7 +14,7 @@ function PricesAndPlans() {
       >
         <Grid container sx={{ justifyContent: "center" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <div className="flex justify-between flex-col-reverse md:flex-row items-center">
+            {/* <div className="flex justify-between flex-col-reverse md:flex-row items-center">
               <div>
                 <h1 className="text-2xl lg:text-3xl xl:text-5xl tracking-normal font-bold italic text-[#292929] font-Monts  text-center   mt-20">We are open <span className="text-[#cc3333]">24 Hours</span> <br />for Business
                 </h1>
@@ -25,7 +25,7 @@ function PricesAndPlans() {
                 alt="muntazim logo"
                 className="w-full  md:w-full lg:w-3/6 "
               />
-            </div>
+            </div> */}
 
           </Grid>
         </Grid>
@@ -33,7 +33,7 @@ function PricesAndPlans() {
       <Container
         disableGutters={true}
         maxWidth="lg"
-        sx={{ px: { xs: "10px", lg: "0px" } }}
+        sx={{ px: { xs: "10px", lg: "0px" }, mt:10 }}
       >
         <Grid container sx={{ justifyContent: "center" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -54,7 +54,7 @@ function PricesAndPlans() {
                   </h1>
                 </div>
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Flat rate per load.</p>
-                <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">1 Truck</p>
+                <p className="text-xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">Box/Reefer Box Trucks</p>
               </div>
               <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
@@ -62,7 +62,8 @@ function PricesAndPlans() {
                   </h1>
                 </div>
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Flat rate per load.</p>
-                <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">2-3 Trucks</p>
+                <p className="text-lg  font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">Semi-Trucks (Power-Only or any trailer)
+</p>
               </div>
               <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
@@ -70,16 +71,16 @@ function PricesAndPlans() {
                   </h1>
                 </div>
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Flat rate per load.</p>
-                <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">+3 Trucks</p>
+                <p className="text-xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">2 or more trucks</p>
               </div>
-              <div className="border shadow-2xl border-red-400 w-full">
+              {/* <div className="border shadow-2xl border-red-400 w-full">
                 <div className="price_truck px-16 flex justify-center items-center py-28">
                   <h1 className="text-[96px] tracking-normal font-bold italic text-white font-Monts leading-normal text-center">$60
                   </h1>
                 </div>
                 <p className="text-xl font-medium font-Raleway text-[#292929] text-center py-4 bg-white">Per truck, Per month.</p>
                 <p className="text-2xl font-bold font-Raleway text-black text-center py-3 bg-[#d3c2c3]">Back-Office Services</p>
-              </div>
+              </div> */}
             </div>
 
 

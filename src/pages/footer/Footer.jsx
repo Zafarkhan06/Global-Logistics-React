@@ -9,7 +9,7 @@ import SubscriptionsRoundedIcon from '@mui/icons-material/SubscriptionsRounded';
 function Footer() {
   const navigate = useNavigate();
   return (
-    <div className="bg-black pt-16">
+    <div className="bg-black pt-10 md:pt-16">
       <Container
         disableGutters={true}
         maxWidth="lg"
@@ -19,7 +19,7 @@ function Footer() {
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div>
-                <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center  italic text-white">Always loaded <br />and profitable
+                <p className="md:text-3xl text-2xl lg:text-4xl mb-6 md:mb-0 font-bold font-Monts text-center  italic text-white">Always loaded <br />and profitable
                 </p>
               </div>
               <div>
@@ -66,7 +66,7 @@ function Footer() {
             </div>
             <div className="flex justify-center md:justify-between  items-center flex-col md:flex-row mt-10">
               <div className="flex w-full md:w-1/4 items-center justify-center md:justify-start">
-                <div className="">
+                <div className="flex justify-center md:justify-start mb-6">
                   <LazyLoadImage onClick={() => navigate("/")} src={logo} alt="muntazim logo" className="rounded-full w-3/12 cursor-pointer" />
                 </div>
 
@@ -83,13 +83,13 @@ function Footer() {
                   href="https://www.facebook.com/perfectgloballogistics"
                   target="_blank"
                 >
-                  <FacebookRoundedIcon sx={{ color: "#cc3333", fontSize: "40px" }} />
+                  <FacebookRoundedIcon sx={{ color: "white", fontSize: "40px" }} />
                 </a>
                 <a
                   href="http://youtube.com/@perfectgloballogistics"
                   target="_blank"
                 >
-                  <SubscriptionsRoundedIcon sx={{ color: "#cc3333", fontSize: "40px" }} />
+                  <SubscriptionsRoundedIcon sx={{ color: "white", fontSize: "40px" }} />
                 </a>
               </div>
               <div>
@@ -97,11 +97,9 @@ function Footer() {
                 <p className="hover:text-[#cc3333] text-center md:text-right cursor-pointer font-Raleway text-white mt-3">​Dispatchers: 24/7</p>
               </div>
             </div>
-            <hr />
-            <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-4">
-              <div className="w-full md:w-4/12">
-                <LazyLoadImage onClick={() => navigate("/")} src={logo} alt="muntazim logo" className="w-2/12 cursor-pointer" />
-              </div>
+            <hr  className="mt-5"/>
+            <div className="flex justify-center items-center py-4">
+              
               <div className=" flex flex-wrap gap-8">
                 <motion.p
                   whileInView={{

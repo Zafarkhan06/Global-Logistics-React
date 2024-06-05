@@ -172,8 +172,8 @@ function ContactUs() {
         <Grid container sx={{ justifyContent: "center" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <div className="relative">
-            <SvgComponent className="absolute -top-10 -left-10 w-44 opacity-20 md:opacity-40 " />
-            <SvgComponent className="absolute top-10 -right-10 w-44  opacity-10 md:opacity-40 " />
+            <SvgComponent className="absolute -top-10 -left-20 w-44 opacity-20 md:opacity-40 " />
+            <SvgComponent className="absolute top-72 -right-10 w-44  opacity-10 md:opacity-40 " />
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -250,7 +250,7 @@ function ContactUs() {
           </Grid>
         </Grid>
       </Container>
-      <div className="bg-[#e8e6e6]  md:mt-16 mb-10">
+      <div className="bg-[#e8e6e6]  pb-10">
         <Container
           disableGutters={true}
           maxWidth="lg"

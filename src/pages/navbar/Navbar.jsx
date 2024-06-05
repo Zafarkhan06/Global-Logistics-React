@@ -121,13 +121,13 @@ const NavBar = () => {
                   {nav ? (
                     <CloseIcon
                       size={40}
-                      sx={{ fontSize: "40px", color: "black" }}
+                      sx={{ fontSize: "40px", color: "white" }}
                     />
                   ) : (
-                    <MenuIcon sx={{ fontSize: "40px", color: "black" }} />
+                    <MenuIcon sx={{ fontSize: "40px", color: "white" }} />
                   )}
                   {nav ? (
-                    <div className="fixed lg:hidden left-0 top-[82px] w-full max-h-fit border-b rounded-b-xl py-5 bg-white ease-in-out duration-500">
+                    <div className="fixed lg:hidden left-0 top-[82px] w-full max-h-fit border-b rounded-b-xl py-5 bg-black ease-in-out duration-500">
                       <p
                         onClick={() => navigate("/")}
                         className={`text-sm ${location.pathname === "/"

@@ -10,8 +10,11 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import talkingGirl from "../../asset/images/talking-girl.png";
 import { useNavigate } from "react-router";
+import Face4Icon from '@mui/icons-material/Face4';
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 function Home() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="min-h-screen bg-white">
@@ -127,26 +130,26 @@ const navigate = useNavigate();
                   </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
                     <a href="tel:+18442644453">
-                    <Button variant="contained"  className="font-Raleway" sx={{
+                      <Button variant="contained" className="font-Raleway" sx={{
 
-                      py: 1,
-                      boxShadow: "none",
-                      fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
-                      fontWeight: "bold",
+                        py: 1,
+                        boxShadow: "none",
+                        fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
+                        fontWeight: "bold",
 
-                      letterSpacing: "0px",
-                      fontFamily: "Raleway",
-                      textTransform: "none",
-                      px: 5,
-                      background:
-                        "#cc3333",
-                      color: "white",
-                      "&:hover": {
+                        letterSpacing: "0px",
+                        fontFamily: "Raleway",
+                        textTransform: "none",
+                        px: 5,
                         background:
                           "#cc3333",
-                        boxShadow: "none",
-                      },
-                    }}> Call Now!</Button>
+                        color: "white",
+                        "&:hover": {
+                          background:
+                            "#cc3333",
+                          boxShadow: "none",
+                        },
+                      }}> Call Now!</Button>
                     </a>
                   </div>
                 </div>
@@ -399,10 +402,353 @@ const navigate = useNavigate();
                     },
                   }}> Hire a Genius Dispatcher</Button>
                 </div>
+
               </Grid>
             </Grid>
           </Container>
         </div>
+        <Container
+          disableGutters={true}
+          maxWidth="lg"
+          sx={{ px: { xs: "10px", lg: "0px" } }}
+        >
+          <Grid container sx={{ justifyContent: "center" }}>
+            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+              <div className="py-16 bg-white">
+                <div className="max-w-screen-lg mx-auto flex flex-col justify-between">
+
+                  <div className="text-center">
+                    <p className="mt-4 text-base font-Monts leading-7 text-[#292929] font-normal">
+                      F.A.Q
+                    </p>
+                    <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight font-Monts text-[#292929]">
+                      Frequently Asked <span className="text-[#cc3333]">Questions</span>
+                    </h3>
+
+                  </div>
+
+                  <div className="mt-10">
+                    <ul className="">
+
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Where does PGL Dispatch find freight?</h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Through loadboards ,brokers, shippers and connections developed through our professional networks over time.
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Can I use your service for a week or two?</h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Yes, we can assist you whether it's for a single load or for as long as you like. With no contracts, you can continue using our dedicated dispatch services as long as you need.
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Will PGL Dispatch negotiate freight for me?</h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Yes, our experienced team will secure the best loads at maximum rates. The more money you make, the more we make.
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">How do I sign up for this service?</h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">To sign up, simply give us a call at the number listed on our website or send us an email. Our dedicated onboarding specialist will guide you through the process. We'll provide you with a simple setup packet to fill out with your company information and attach the required documents. Let's get started!
+
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">What are the required documents to get started?</h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full ">
+                            <p className="text-[#292929] font-Monts text-lg font-medium">To get started, you'll need to provide the following documents:
+                            </p>
+                            <ul>
+                              <li className="list-disc list-inside	">Certificate of MC Authority</li>
+                              <li className="list-disc list-inside	">Certificate of Insurance</li>
+                              <li className="list-disc list-inside">W-9 Form</li>
+                              <li className="list-disc list-inside">Notice of Assignment from factoring or voided check if you prefer quickpay or standard payment directly from the broker.
+                              </li>
+                              <li className="list-disc list-inside	">Once we have these documents, we can swiftly proceed with setting up with our expert dispatchers to start getting you the best loads.
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">How much do you charge?</h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full ">
+                            <p className="text-[#292929] font-Monts text-sm">At PGL Dispatch, we believe in fair and transparent pricing. While other companies typically charge between 8% to 10% per load, we charge even less – the minimum possible without compromising service quality.
+                            </p>
+                            <p className="text-[#292929] font-Monts text-sm">We're committed to supporting hardworking owner-operators and carriers by providing a dispatch service at a reasonable rate. We work with box trucks at 7% and with semi-trucks at 6%. If you have two or more trucks, we provide a flat fee of just 5% per load.</p>
+                            <p className="text-[#292929] font-Monts text-sm">Partner with PGL Dispatch and keep more of your hard-earned money in your pocket!
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+
+
+
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Do you cover all 48 states?
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Yes.  We can find you the best freight available all over the 48 states!
+
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Can I reject a load you offered me?
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Absolutely! You're the Boss!
+                              At PGL Dispatch, we understand that you're in charge of your business. You have the freedom to
+                              decide which loads to accept or reject, ensuring that every decision aligns with your preferences and priorities.
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+                          </div>
+                        </div>
+                      </li>
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Do you offer fuel advances?
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">No, we don't directly offer fuel advances. However, we can facilitate the process by requesting fuel advances from the broker, shipper, or your factoring company on your behalf.
+
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+
+
+
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Do you work with new carriers?
+
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Yes, we specialize in supporting new carriers looking to grow their business. With our expertise and experience working with new carriers and growing their business, we understand the unique challenges new carriers face in the market and assist them every step of the way!
+
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+                          </div>
+                        </div>
+                      </li>
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">How quickly can I expect my trucks to be dispatched once I sign up with PGL Dispatch?
+
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Upon signing up with PGL Dispatch, we're ready to start making you money as soon as possible. Once you've completed our setup packet and agreement, our dedicated dispatch team springs into action. We'll promptly reach out to you to discuss your preferences and gather essential details about your trucks and drivers, ensuring a seamless and efficient start to our partnership.
+
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+                          </div>
+                        </div>
+                      </li>
+
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">What kind of support does PGL Dispatch provide in case of emergencies or late at night?
+
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Rest assured, our dispatch team is active and available 24/7 to provide support whenever you need it. Whether it's a late-night emergency or an unforeseen issue, we're here to assist you every step of the way.
+
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+                          </div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </Grid>
+          </Grid>
+        </Container>
         <div className="person-bg py-16 realtive">
           <Container
             disableGutters={true}
@@ -444,6 +790,8 @@ const navigate = useNavigate();
             </Grid>
           </Container>
         </div>
+
+
       </div>
     </>
   );

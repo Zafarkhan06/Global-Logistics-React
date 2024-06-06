@@ -39,8 +39,8 @@ function PricesAndPlans() {
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <h1 className="text-2xl lg:text-3xl xl:text-[48px] tracking-normal font-bold italic text-[#292929] font-Monts leading-normal text-center   mt-20">Quality <span className="text-[#cc3333]">Without</span>  Compromise
             </h1>
-            <p className="text-lg font-Raleway text-[#292929] text-center mt-10">Streamline Your Operations with Our Comprehensive FMCSA & DOT Compliance Solutions.</p>
-            <p className="text-lg font-Raleway text-[#292929] text-center">We keep up with the latest regulations and help you stay compliant, minimizing the risk of fines, penalties, and other consequences. With our services, you can focus on your core business while we handle all your FMCSA and DOT compliance needs.</p>
+            <p className="text-xl font-Raleway text-[#292929] text-center mt-10">At Perfect Global Logistics, we believe in fair and flexible pricing.</p>
+            <p className="text-lg font-Raleway text-[#292929] text-center"> Unlike others, we don't charge upfront fees or impose weekly rates. Instead, we operate on a commission basis, ensuring that you pay for the service you receive. Our commitment to transparency means that the more you make, the more we make – it's a win-win. Plus, with the lowest rates in the industry, you can trust that you're getting top-quality service without breaking the bank. Streamline your operations and maximize your profits with our affordable pricing solutions today.</p>
             <div className="relative">
               <SvgComponent className="absolute -top-72 -left-10 w-36  opacity-40 " />
               <SvgComponent className="absolute -top-44 -right-40 w-36  opacity-40 " />

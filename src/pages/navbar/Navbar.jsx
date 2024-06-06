@@ -6,7 +6,7 @@ import { Container, Grid, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
-import {  useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const NavBar = () => {
   }, []);
   return (
     <>
-      <div className=" bg-black border-b">
+      <div className=" bg-black">
         <Container
           disableGutters={true}
           maxWidth="lg"
@@ -53,7 +53,7 @@ const NavBar = () => {
                     className="w-3/6 md:w-1/6 cursor-pointer"
                   />
                 </div>
-                <div className="lg:flex hidden gap-20 items-center ">
+                <div className="lg:flex hidden gap-10 items-center ">
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
@@ -61,20 +61,20 @@ const NavBar = () => {
                     className={`${location.pathname === "/"
                       ? "text-[#cc3333]"
                       : "text-white"
-                      } font-Raleway font-medium capitalize cursor-pointer hover:text-[#757575]`}
+                      } font-Raleway font-normal text-lg tracking-widest capitalize cursor-pointer hover:text-[#757575]`}
                   >
                     Home
                   </motion.p>
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
-                    onClick={() => navigate("/price-and-plans")}
-                    className={` ${window.location.href.includes("/price-and-plans")
+                    onClick={() => navigate("/pricing")}
+                    className={` ${window.location.href.includes("/pricing")
                       ? "text-[#cc3333]"
                       : "text-white"
-                      } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
+                      } font-Raleway font-normal  text-lg capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
                   >
-                    Price & Plans
+                    Pricing
                   </motion.p>
 
                   <motion.p
@@ -84,33 +84,34 @@ const NavBar = () => {
                     className={` ${window.location.href.includes("/contactus")
                       ? "text-[#cc3333]"
                       : "text-white"
-                      } font-Raleway font-medium  capitalize cursor-pointer hover:text-[#757575]`}
+                      } font-Raleway font-normal  text-lg capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
                   >
                     Contact Us
                   </motion.p>
+                  <div className="hidden lg:block">
+                    <a href="tel:+18442644453">
+                      <Button variant="contained" className="font-Monts" sx={{
+                        px: 3,
+                        py: 1,
+                        boxShadow: "none",
+                        fontSize: "1rem",
+                        fontWeight: "bold",
+
+                        textTransform: "capitalize",
+                        letterSpacing: "2px",
+                        background:
+                          "#cc3333",
+                        color: "white",
+                        "&:hover": {
+                          background:
+                            "#cc3333",
+                          boxShadow: "none",
+                        },
+                      }}> (844) 264-4453</Button>
+                    </a>
+                  </div>
                 </div>
-                <div className="hidden lg:block">
-                  <a href="tel:+18442644453">
-                  <Button variant="contained" className="font-Monts" sx={{
-                    px: 3,
-                    py: 1,
-                    boxShadow: "none",
-                    fontSize: "1rem",
-                    fontWeight: "bold",
-                   
-                    textTransform: "capitalize",
-                    letterSpacing: "2px",
-                    background:
-                      "#cc3333",
-                    color: "white",
-                    "&:hover": {
-                      background:
-                        "#cc3333",
-                      boxShadow: "none",
-                    },
-                  }}> +1(844)264-4453</Button>
-                  </a>
-                </div>
+
 
                 {/* Mobile Navigation Icon */}
                 <div
@@ -133,18 +134,18 @@ const NavBar = () => {
                         className={`text-sm ${location.pathname === "/"
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575]  text-lg py-2 tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Home
                       </p>
                       <p
-                        onClick={() => navigate("/price-and-plans")}
-                        className={`text-sm mt-3 ${window.location.href.includes("/price-and-plans")
+                        onClick={() => navigate("/pricing")}
+                        className={`text-sm mt-3 ${window.location.href.includes("/pricing")
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575] py-2  text-lg tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
-                        Price & Plans
+                        Pricing
                       </p>
 
                       <p
@@ -152,30 +153,30 @@ const NavBar = () => {
                         className={`text-sm mt-3 ${window.location.href.includes("/contactus")
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575] py-2 tracking-wider cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575] py-2  text-lg tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Contact Us
                       </p>
                       <div className="px-5 pt-5 flex justify-center" >
-                      <a href="tel:+18442644453">
-                        <Button variant="contained" sx={{
-                          px: 5,
-                          py: 1,
-                          fontSize: "1rem",
-                          fontWeight: "semibold",
-                          
-                          textTransform: "capitalize",
-                          letterSpacing: "2px",
-                          background:
-                            "#cc3333",
-                          color: "#f5f1e4",
-                          "&:hover": {
-                            color: "#121212",
+                        <a href="tel:+18442644453">
+                          <Button variant="contained" sx={{
+                            px: 5,
+                            py: 1,
+                            fontSize: "1rem",
+                            fontWeight: "semibold",
+
+                            textTransform: "capitalize",
+                            letterSpacing: "2px",
                             background:
                               "#cc3333",
-                          },
-                        }}> +1 (844) 264-4453
-                        </Button>
+                            color: "#f5f1e4",
+                            "&:hover": {
+                              color: "#121212",
+                              background:
+                                "#cc3333",
+                            },
+                          }}> +1 (844) 264-4453
+                          </Button>
                         </a>
                       </div>
                     </div>

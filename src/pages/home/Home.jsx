@@ -12,6 +12,9 @@ import talkingGirl from "../../asset/images/talking-girl.png";
 import { useNavigate } from "react-router";
 import Face4Icon from '@mui/icons-material/Face4';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import bgTruck from "../../asset/images/bg-person.png";
+import whoIcon from "../../asset/images/whoicon.png";
+
 function Home() {
   const navigate = useNavigate();
 
@@ -26,8 +29,8 @@ function Home() {
           <Grid container sx={{ justifyContent: "center" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <div className="flex pt-6 items-center  flex-col lg:flex-row lg:items-start">
-                <div className="lg:w-6/12 lg:mt-10">
-                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Monts leading-tight text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#cc3333]">Most Reliable</span>  Dispatch Company in  North America.
+                <div className="lg:w-7/12 lg:mt-10">
+                  <h1 className="text-2xl lg:text-3xl xl:text-[40px] tracking-normal font-bold italic text-[#292929] font-Monts leading-relaxed text-center md:text-start mt-10">Welcome to the <span className="underline decoration-[#cc3333]">Most Reliable</span>   Freight Mangement Partner for your Trucking Business!
                   </h1>
                   <p className="text-center md:text-start text-base lg:text-base xl:text-lg text-[#292929] font-Raleway mt-4 lg:mt-8">We find the best paying loads in the market.
                   </p>
@@ -76,13 +79,20 @@ function Home() {
 
               </div>
               <div className="flex justify-center gap-10 flex-col md:flex-row py-10 items-center md:items-end relative" >
-                <SvgComponent className="absolute top-0 w-1/3 opacity-40 z-0 -left-20" />
-                <div className="flex items-end gap-4 mt-10">
-                  <p className="md:text-7xl text-6xl lg:text-8xl font-black font-Inter text-[#292929] ">53'</p>
-                  <p className="md:text-3xl text-xl lg:text-4xl font-bold font-Monts italic text-[#292929] ">Dry Vans, Reefers, <br /> and Flatbeds Only.</p>
+                <SvgComponent className="absolute top-0 w-1/3 opacity-40 z-0 -left-60" />
+                <div className="flex items-center gap-4 mt-10">
+                  <p className="md:text-7xl text-6xl lg:text-8xl font-black font-Raleway text-[#cc3333] ">Focus</p>
+                  <p className="md:text-3xl text-xl lg:text-5xl font-bold font-Monts italic text-[#292929] ">on what matters most!</p>
                 </div>
-                <p className="text-lg font-medium font-Raleway text-center md:text-start text-[#292929] ">A Bigger <br className="hidden md:block" /> Equipment makes  <br className="hidden md:block" /> you more Money!</p>
-                <SvgComponent className="absolute top-30 w-1/3 opacity-40 z-0 " />
+
+                {/* <p className="text-lg font-medium font-Raleway text-center md:text-start text-[#292929] ">A Bigger <br className="hidden md:block" /> Equipment makes  <br className="hidden md:block" /> you more Money!</p> */}
+
+              </div>
+              <div className='relative'>
+                <p className="text-xl font-medium font-Raleway text-start text-[#292929] ">Let us take care of the rest. At <span className="text-[#cc3333] font-semibold">PGL Dispatch</span>, we understand your time is best spent on the road. That's why we handle everything else for you.</p>
+                <p className="text-lg font-normal font-Raleway text-start text-[#292929] mt-3 ">We find the highest paying loads and plan your routes to ensure every mile counts. Our team keeps in touch with brokers and shippers, so you're always in the loop. We take care of setting up with new freight brokers, handle all the paperwork, and invoice to get you paid quickly, whether through your factoring company or directly from brokers. Our dispatch team is available 24/7 to assist you with any needs or concerns, or in case of emergencies whenever required.</p>
+                <p className="text-lg font-normal font-Raleway text-start text-[#292929] ">With us, you can focus on driving and growing your business. Let <span className="text-[#cc3333] font-semibold">PGL Dispatch</span> be your trusted partner on the road to success, making your job easier and more profitable.</p>
+                <SvgComponent className="absolute -bottom-52 -right-32 w-1/3 opacity-40 z-0 " />
               </div>
               <div className="md:mt-24 flex  flex-col relative md:flex-row items-center justify-between">
                 <SvgComponent className="absolute -top-10 right-96 w-20 opacity-40 z-0 " />
@@ -228,12 +238,19 @@ function Home() {
               <div className="lg:mt-44 md:mt-60 mt-36 flex flex-col justify-center items-center">
                 <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center  italic text-[#292929]">Getting started is easy
                 </p>
+                <p className="text-lg font-medium font-Monts mt-6 text-center text-[#292929] ">Simply get in touch with our onboarding specialist via phone, and they will guide you through the process. They'll gather the necessary details from you to send over the agreement via email. In the same document, you can attach the required documents in the designated space and fill in your company info. Once the agreement is signed, we'll connect you with your dedicated dispatcher, who will start finding loads according to your preferences. It's that simple - <span className="text-[#cc3333]">let's get you on the road to success!</span>
+                </p>
                 <div className="mt-16 flex flex-col md:flex-row gap-10 lg:gap-28 items-start">
-                  <div className="flex justify-center items-center flex-col">
+                  <div className="flex justify-center items-center w-full md:w-1/3 flex-col">
                     <FolderCopyIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
-                    <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-[#292929]">Send Documents
-                    </p>
-                    <p className="text-lg font-Raleway text-center  italic text-[#292929]">MC Authority, Certificate of <br /> Insurance and W-9 Form
+
+                    <div className="bg-[#cc3333] mt-3 px-5 py-3 rounded-xl  shadow-xl">
+                      <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-white">Send Documents
+                      </p>
+                      <p className=" font-normal font-Monts mt-6 text-center pb-5 text-slate-100 ">Provide us with your MC Authority, Certificate of Insurance, and W-9 Form. These documents are essential for setting up your account with brokers and ensuring compliance.
+                      </p>
+                    </div>
+                    {/* <p className="text-lg font-Raleway text-center  italic text-[#292929]">MC Authority, Certificate of <br /> Insurance and W-9 Form
                     </p>
                     <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
                       <Button variant="contained" className="font-Raleway" sx={{
@@ -256,68 +273,53 @@ function Home() {
                           boxShadow: "none",
                         },
                       }}> Send Documents</Button>
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="flex justify-center items-center flex-col">
+                  <div className="flex w-full md:w-1/3 justify-center items-center flex-col">
                     <HandshakeIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
-                    <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-[#292929]">Sign Agreement
-                    </p>
-                    <p className="text-lg font-Raleway text-center  italic text-[#292929]">Sign a quick and easy dispatch <br /> service level agreement.
+                    <div className="bg-[#cc3333] mt-3 px-5 py-3 rounded-xl  shadow-xl">
+                      <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-white">Sign Agreement
 
-                    </p>
-                    <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                      <Button variant="contained" className="font-Raleway" sx={{
+                      </p>
+                      <p className=" font-normal font-Monts mt-6 text-center pb-5 text-slate-100 ">Quickly and easily sign our Dispatcher-Carrier service level agreement. This agreement outlines the terms of our partnership and ensures mutual understanding.
 
-                        py: 1,
-                        boxShadow: "none",
-                        fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
-                        fontWeight: "bold",
-
-                        letterSpacing: "0px",
-                        fontFamily: "Raleway",
-                        textTransform: "none",
-                        px: 6,
-                        background:
-                          "#cc3333",
-                        color: "white",
-                        "&:hover": {
-                          background:
-                            "#cc3333",
-                          boxShadow: "none",
-                        },
-                      }}> Request Agreement</Button>
+                      </p>
                     </div>
                   </div>
-                  <div className="flex justify-center items-center flex-col">
+                  <div className="flex w-full md:w-1/3 justify-center items-center flex-col">
                     <LocalShippingIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
-                    <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center  text-[#292929]">Hit the road
+                    <div className="bg-[#cc3333] mt-3 px-5 py-3 rounded-xl  shadow-xl">
+                      <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-white">Hit the road
 
-                    </p>
-                    <p className="text-lg font-Raleway text-center  italic text-[#292929]">We start dispatching<br /> your truck immediately.
-                    </p>
-                    <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
-                      <Button onClick={() => navigate("/contactus")} variant="contained" className="font-Raleway" sx={{
-                        py: 1,
-                        boxShadow: "none",
-                        fontSize: { sm: "0.75rem", md: "1rem", lg: "1rem", xl: "1rem" },
-                        fontWeight: "bold",
+                      </p>
+                      <p className=" font-normal font-Monts mt-0 text-center pb-1 text-slate-100 ">Once your documents are received and the agreement is signed, we'll start dispatching your truck immediately. You can hit the road with confidence, knowing that our team is working to secure the best loads for you.
 
-                        letterSpacing: "0px",
-                        fontFamily: "Raleway",
-                        textTransform: "none",
-                        px: 6,
-                        background:
-                          "#cc3333",
-                        color: "white",
-                        "&:hover": {
-                          background:
-                            "#cc3333",
-                          boxShadow: "none",
-                        },
-                      }}> Hire a Dispatcher</Button>
+                      </p>
                     </div>
                   </div>
                 </div>
+                {/* <div className="mt-16">
+                  <a href="tel:+18442644453">
+                  <Button variant="contained" className="font-Monts" sx={{
+                    px: 3,
+                    py: 1,
+                    boxShadow: "none",
+                    fontSize: "1rem",
+                    fontWeight: "bold",
+                   
+                    textTransform: "capitalize",
+                    letterSpacing: "2px",
+                    background:
+                      "#cc3333",
+                    color: "white",
+                    "&:hover": {
+                      background:
+                        "#cc3333",
+                      boxShadow: "none",
+                    },
+                  }}> (844) 264-4453</Button>
+                  </a>
+                </div> */}
               </div>
               <div className=" mt-20 md:mt-24 flex  flex-col relative md:flex-row items-start justify-between">
                 <SvgComponent className="absolute -top-10 right-96 w-20 opacity-40 z-0 " />
@@ -366,7 +368,7 @@ function Home() {
           </Grid>
         </Container>
 
-        <div className="flex py-16 md:py-20 justify-center bg-[#cc3333] items-start">
+        <div className="flex justify-center  items-start">
           <Container
             disableGutters={true}
             maxWidth="lg"
@@ -374,7 +376,55 @@ function Home() {
           >
             <Grid container sx={{ justifyContent: "center" }}>
               <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center italic text-white ">What is truck dispatch service?
+                <div className="max-w-screen-xl mx-auto pt-16 px-4 lg:py-20 lg:px-6">
+                  <div className="text-center mb-10">
+                    <h2 className="text-4xl md:text-6xl font-Monts tracking-tight font-bold text-[#cc3333]">Who We Are</h2>
+                  </div>
+
+                  <div className="flex flex-col md:flex-row">
+
+                    <div className="mr-0 md:mr-8 mb-6 md:mb-0 md:w-1/3">
+                      <img className="w-full mx-auto" src={whoIcon} alt="can_help_banner" />
+                    </div>
+
+
+                    <div className="flex-1 flex flex-col font-Monts sm:flex-row flex-wrap -mb-4 -mx-4">
+                      <div className="w-full sm:w-1/2 mb-6 px-2 ">
+                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                          <h3 className="text-2xl font-bold text-md mb-4">Our Mission:</h3>
+                          <p className="text-xs">At PGL Dispatch, we're more than just a team of truck dispatchers - we're your dedicated partners on the road to success. Our mission is simple: to empower carriers and owner-operators like you to thrive in an industry where profitability is key. We believe in transparency, reliability, and building long-lasting relationships based on trust and exceptional service.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="w-full sm:w-1/2 mb-6 px-2 ">
+                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                          <h3 className="text-2xl font-bold text-md mb-4">Our Fee Model:</h3>
+                          <p className="text-xs"> With our low percentage fee model, we're motivated to negotiate the highest rates possible for you, because when you succeed, we succeed. We've done away with restrictive contracts, opting instead for a commitment to providing unparalleled customer service and support. Unlike other dispatchers and brokers who prioritize their bottom line over your success, we're here to prioritize you.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="w-full sm:w-1/2 mb-6 px-2 ">
+                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                          <h3 className="text-2xl font-bold text-md mb-6">24/7 Customer Support:</h3>
+                          <p className="text-xs">Our team works tirelessly behind the scenes to handle all the details, from finding the highest paying loads to managing paperwork and invoicing. We're available 24/7 to assist you with any needs or concerns, ensuring that you always have the support you need, whenever you need it.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="w-full sm:w-1/2 mb-6 px-2 ">
+                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                          <h3 className="text-2xl font-bold text-md mb-6">Maximize your Business:</h3>
+                          <p className="text-xs">At PGL Dispatch, we understand that your time is best spent on the road, so let us take care of the rest. We're here to streamline your operations, maximize your profitability, and help you achieve your goals. With PGL Dispatch by your side, you can focus on driving and growing your business, confident that you have a trusted partner supporting you every step of the way.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                {/* <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center italic text-white ">What is truck dispatch service?
                 </p>
                 <p className="md:text-sm mt-6 text-xs lg:text-base font-normal font-Raleway text-center text-white md: px-16 px-8 lg:px-28">A truck dispatch services help truck drivers and owner operators who have their own trucking company manage the load booking and back-office processes of running a trucking company. Some dispatchers specialize only in booking loads, while others, like Genius Dispatch, offer a wide variety of services such as invoice management and detention requests.
                 </p>
@@ -401,7 +451,7 @@ function Home() {
                       border: "2px solid black"
                     },
                   }}> Hire a Genius Dispatcher</Button>
-                </div>
+                </div> */}
 
               </Grid>
             </Grid>
@@ -491,6 +541,30 @@ function Home() {
                         <div className="flex flex-row items-start">
                           <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
                             <p className="text-[#292929] font-Monts text-sm">Yes, our experienced team will secure the best loads at maximum rates. The more money you make, the more we make.
+                            </p>
+                          </div>
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                            <Face4Icon sx={{ fontSize: "30px" }} />
+
+                          </div>
+                        </div>
+                      </li>
+                      <li className="text-left mb-10">
+                        <div className="flex flex-row items-start mb-5">
+                          <div
+                            className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-[#cc3333] text-white border-4 border-white text-xl font-semibold">
+                            <QuestionMarkIcon sx={{ color: "white" }} />
+                          </div>
+                          <div className="bg-[#e8e6e6] p-5 px-10 w-full flex items-center">
+                            <h4 className="text-md leading-6 font-medium font-Monts text-[#292929]">Do you run credit checks on brokers?
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div className="flex flex-row items-start">
+                          <div className="bg-[#f0dac2] p-5 px-10 w-full flex items-center">
+                            <p className="text-[#292929] font-Monts text-sm">Yes, we take the utmost care in selecting the brokers we work with. Before booking loads, we conduct thorough background checks and credit assessments to ensure they are reputable and reliable. Additionally, we verify that they work with your factoring company, if applicable. Our extensive network allows us to identify any shady brokers, and we maintain a blacklist to ensure our clients never face any issues. Rest assured, we only work with trusted brokers to secure the best opportunities for you.
                             </p>
                           </div>
                           <div
@@ -749,7 +823,30 @@ function Home() {
             </Grid>
           </Grid>
         </Container>
-        <div className="person-bg py-16 realtive">
+        <Container
+          disableGutters={true}
+          maxWidth="lg"
+          sx={{ px: { xs: "10px", lg: "0px" } }}
+        >
+          <Grid container sx={{ justifyContent: "center" }}>
+            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+              <div className="flex justify-between flex-col-reverse md:flex-row items-center">
+                <div>
+                  <h1 className="text-2xl lg:text-3xl xl:text-5xl tracking-normal font-bold italic text-[#292929] font-Monts  text-center   mt-20">We are open <span className="text-[#cc3333]">24 Hours</span> <br />for Business
+                  </h1>
+                  <p className="text-2xl font-semibold font-Raleway text-[#292929] text-center mt-5">We are available every minute of the day to boom your business.</p>
+                </div>
+                <LazyLoadImage
+                  src={bgTruck}
+                  alt="muntazim logo"
+                  className="w-full  md:w-full lg:w-3/6 "
+                />
+              </div>
+
+            </Grid>
+          </Grid>
+        </Container>
+        {/* <div className="person-bg py-16 realtive">
           <Container
             disableGutters={true}
             maxWidth="lg"
@@ -789,7 +886,7 @@ function Home() {
               </Grid>
             </Grid>
           </Container>
-        </div>
+        </div> */}
 
 
       </div>

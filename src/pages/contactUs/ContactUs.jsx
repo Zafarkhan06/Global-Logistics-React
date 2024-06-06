@@ -201,7 +201,28 @@ function ContactUs() {
               viewport={{ once: true, amount: 0.3 }}
               className="flex flex-col md:flex-row relative gap-5  mt-10 md:mt-20"
             >
-              
+              <motion.div
+                variants={smallportionVariants}
+                className="md:w-1/2 border-b shadow-2xl md:border-b-0 bg-[#cc3333] px-5 rounded-lg flex items-center gap-5 md:border-r md:pl-5 border-[#FEAF00] py-5"
+              >
+                <div className="bg-black rounded-full p-4">
+                  <AddLocationAltOutlinedIcon
+                    sx={{
+                      color: "white",
+                      fontSize: { sm: "35px", md: "45px" },
+                    }}
+                  />
+                </div>
+                <div>
+                  <p className="text-xl text-start border-[#FEAF00 ] text-white font-Monts capitalize">
+                    Address
+                  </p>
+                  <p className="raleway mt-2 text-sm   text-[#f5f1e4] ">
+                  1603 Capitol Avenue, Suite 413A
+Cheyenne, WY 82001
+                  </p>
+                </div>
+              </motion.div>
               <motion.div
                 variants={smallportionVariants}
                 className="md:w-1/2 border-b shadow-2xl md:border-b-0 bg-[#cc3333] px-5 rounded-lg flex items-center gap-5 md:border-r md:pl-5 border-[#FEAF00] py-5"
@@ -219,7 +240,7 @@ function ContactUs() {
                     Phone Number
                   </p>
                   <p className="raleway mt-2 text-sm   text-[#f5f1e4] ">
-                  +1 (844) 264-4453
+                  (844) 264-4453
                   </p>
                 </div>
               </motion.div>

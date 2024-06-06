@@ -6,7 +6,7 @@ function Main({ children }) {
     <div>
       <div className="bg-white w-full">
         <div>
-          <div className="z-50 sticky top-0">
+          <div>
             <NavBar />
           </div>
           <div className="overflow-x-clip">

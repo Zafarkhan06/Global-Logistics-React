@@ -11,7 +11,7 @@ import dat from "../../asset/images/2560px-DAT-Solutions-Logo.svg.png";
 function Footer() {
   const navigate = useNavigate();
   return (
-    <div className="bg-black pt-10 md:pt-16">
+    <div className="bg-black pt-16 md:pt-32">
       <Container
         disableGutters={true}
         maxWidth="lg"
@@ -44,11 +44,11 @@ function Footer() {
                       transition: { duration: 1 },
                       scale: 1.12,
                     }}
-                    onClick={() => navigate("/outbound")}
+                    onClick={() => navigate("/pricing")}
                     whileTap={{ scale: 0.9 }}
                     className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white capitalize"
                   >
-                    Price & Plans
+                    Pricing
                   </motion.p>
 
                   <motion.p
@@ -107,7 +107,7 @@ function Footer() {
               </div>
             </div>
             <hr className="mt-5" />
-            <div className="flex justify-center items-center py-4">
+            <div className="flex justify-center items-center py-8">
 
               <div className=" flex flex-wrap gap-8">
                 <motion.p
@@ -128,11 +128,11 @@ function Footer() {
                     transition: { duration: 1 },
                     scale: 1.12,
                   }}
-                  onClick={() => navigate("/outbound")}
+                  onClick={() => navigate("/pricing")}
                   whileTap={{ scale: 0.9 }}
                   className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white capitalize"
                 >
-                  Price & Plans
+                  Pricing
                 </motion.p>
 
                 <motion.p

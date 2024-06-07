@@ -58,7 +58,7 @@ function Footer() {
                       //onClick={handleScrollToFAQ}
                       className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
                     >
-                      FAQ
+                      FAQ's
                     </motion.p>
                   </Link>
                   <Link to="/#whoweare">
@@ -174,7 +174,7 @@ function Footer() {
                     //onClick={handleScrollToFAQ}
                     className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
                   >
-                    FAQ
+                    FAQ's
                   </motion.p>
                 </Link>
                 <Link to="/#whoweare">

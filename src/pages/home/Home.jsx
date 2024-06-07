@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import truck from "../../asset/images/first-truck.webp";
 import usaFlag from "../../asset/images/usa-flag.webp";
 import SvgComponent from "../components/SvgComponent";
-import capPerson from "../../asset/images/cap-person.webp";
+import capPerson from "../../asset/images/bg-truckk.webp";
 import threeTrucks from "../../asset/images/three-trucks.webp"
 import FolderCopyIcon from '@mui/icons-material/FolderCopy';
 import HandshakeIcon from '@mui/icons-material/Handshake';
@@ -111,14 +111,14 @@ function Home() {
               </div>
               <div className="md:mt-24 flex  flex-col relative md:flex-row items-center justify-between">
                 <SvgComponent className="absolute -top-10 right-96 w-20 opacity-40 z-0 " />
-                <div className="md:w-1/2">
+                <div className="md:w-1/2 mt-10 md:mt-2">
                   <LazyLoadImage
                     src={capPerson}
                     alt="muntazim logo"
-                    className="w-full md:w-full lg:w-full z-20"
+                    className="w-full md:w-full lg:w-10/12 rounded-2xl shadow-xl z-20"
                   />
                 </div>
-                <div className="w-full md:w-1/2">
+                <div className="w-full mt-10 md:mt-2 md:w-1/2">
                   <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-start italic text-[#292929] ">Hit the road on your terms, you're the boss
                   </p>
                   <p className="md:text-base text-sm lg:text-xl font-normal font-Raleway text-center mt-5 md:text-start text-[#292929] ">Loads, rates and routes are your choice, no force dispatching. We make sure you get the best freight at the best rate and get paid on time. Documentation, prices and fees are disclosed upfront.

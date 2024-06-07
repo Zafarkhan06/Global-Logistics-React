@@ -7,7 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
 import { useLocation } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -34,6 +34,9 @@ const NavBar = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+  const handleScrollToFAQ = () => {
+    navigate("/#faq");
+  };
   return (
     <>
       <div className=" bg-black">
@@ -58,10 +61,10 @@ const NavBar = () => {
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/")}
-                    className={`${location.pathname === "/"
+                    className={`${location.pathname === "/" && location.hash === ""
                       ? "text-[#cc3333]"
                       : "text-white"
-                      } font-Raleway font-normal text-lg tracking-widest capitalize cursor-pointer hover:text-[#757575]`}
+                      } font-Raleway font-normal tracking-widest capitalize cursor-pointer hover:text-[#757575]`}
                   >
                     Home
                   </motion.p>
@@ -72,10 +75,31 @@ const NavBar = () => {
                     className={` ${window.location.href.includes("/pricing")
                       ? "text-[#cc3333]"
                       : "text-white"
-                      } font-Raleway font-normal  text-lg capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                      } font-Raleway font-normal   capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
                   >
                     Pricing
                   </motion.p>
+                  <Link to="/#faq">
+                  <motion.p
+                    whileTap={{ scale: 0.9 }}
+                    whileHover={{ scale: 1.04 }}
+                    //onClick={handleScrollToFAQ}
+                    className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                  >
+                    FAQ
+                  </motion.p>
+                  </Link>
+
+                  <Link to="/#whoweare">
+                  <motion.p
+                    whileTap={{ scale: 0.9 }}
+                    whileHover={{ scale: 1.04 }}
+                    //onClick={handleScrollToFAQ}
+                    className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                  >
+                    Who We Are
+                  </motion.p>
+                  </Link>
 
                   <motion.p
                     whileTap={{ scale: 0.9 }}
@@ -84,7 +108,7 @@ const NavBar = () => {
                     className={` ${window.location.href.includes("/contactus")
                       ? "text-[#cc3333]"
                       : "text-white"
-                      } font-Raleway font-normal  text-lg capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                      } font-Raleway font-normal   capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
                   >
                     Contact Us
                   </motion.p>
@@ -134,7 +158,7 @@ const NavBar = () => {
                         className={`text-sm ${location.pathname === "/"
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575]  text-lg py-2 tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575]   py-2 tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Home
                       </p>
@@ -143,7 +167,7 @@ const NavBar = () => {
                         className={`text-sm mt-3 ${window.location.href.includes("/pricing")
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575] py-2  text-lg tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Pricing
                       </p>
@@ -153,7 +177,7 @@ const NavBar = () => {
                         className={`text-sm mt-3 ${window.location.href.includes("/contactus")
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575] py-2  text-lg tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Contact Us
                       </p>

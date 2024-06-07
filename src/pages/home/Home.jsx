@@ -185,6 +185,35 @@ function Home() {
             </Grid>
           </Grid>
         </Container>
+        <Container
+          id="faq"
+          disableGutters={true}
+          maxWidth="lg"
+          sx={{ px: { xs: "10px", lg: "0px" } }}
+        >
+          <Grid container sx={{ justifyContent: "center" }}>
+            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+              <div className="py-16 bg-white">
+                <div className=" flex flex-col justify-between">
+
+                  <div className="text-center">
+                    <p className=" text-base font-Monts leading-7 text-[#292929] font-normal">
+                      F.A.Q's
+                    </p>
+                    <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight font-Monts text-[#292929]">
+                      Frequently Asked <span className="text-[#cc3333]">Questions</span>
+                    </h3>
+
+                  </div>
+                  <FAQ />
+                </div>
+              </div>
+              {/* <div>
+                <Testimonials />
+              </div> */}
+            </Grid>
+          </Grid>
+        </Container>
         {/* <div className="flex py-20 md:py-32 justify-center mt-20 bg-[#f0dac2] items-start">
           <Container
             disableGutters={true}
@@ -493,12 +522,12 @@ function Home() {
         >
           <Grid container sx={{ justifyContent: "center" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <div className="py-16 bg-white">
+              {/* <div className="py-16 bg-white">
                 <div className=" flex flex-col justify-between">
 
                   <div className="text-center">
                     <p className=" text-base font-Monts leading-7 text-[#292929] font-normal">
-                      F.A.Q
+                      F.A.Q's
                     </p>
                     <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight font-Monts text-[#292929]">
                       Frequently Asked <span className="text-[#cc3333]">Questions</span>
@@ -507,7 +536,7 @@ function Home() {
                   </div>
                   <FAQ />
                 </div>
-              </div>
+              </div> */}
               <div>
                 <Testimonials />
               </div>

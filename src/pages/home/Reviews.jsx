@@ -48,7 +48,7 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <div className="lg:col-span-2">
-                        <div className="flex flex-col justify-between w-full h-full px-6 py-6 hover:shadow-md hover:translate-y-3 hover:shadow-black bg-[#cc3333] md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                        <div className="flex flex-col justify-between w-full h-full px-6 py-6 hover:shadow-md hover:translate-y-3 hover:shadow-black.0 bg-[#cc3333] md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
                             <p className="md:text-lg leading-normal text-white">
                                 We were completely new to the trucking business and struggling to get any loads. With a new driver and no experience, we needed a lot of guidance. <mark className="mx-1 px-2 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-black dark:bg-black text-white">PGL Dispatch</mark> stepped in and helped us with everything. They found us loads, gave us advice on what to do and where to go, and managed all aspects of our operations. Just saying they are a dispatching company isn't enough – they truly handle everything. Thanks to their support, we've been able to get our business up and running smoothly. Highly recommend them!     </p>
                             <div className="mt-5">

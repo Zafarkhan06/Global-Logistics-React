@@ -218,7 +218,7 @@ function ContactUs() {
                     Address
                   </p>
                   <p className="raleway mt-2 text-sm   text-[#f5f1e4] ">
-                  1603 Capitol Avenue, Suite 413A
+                  1603 Capitol Avenue,
 Cheyenne, WY 82001
                   </p>
                 </div>

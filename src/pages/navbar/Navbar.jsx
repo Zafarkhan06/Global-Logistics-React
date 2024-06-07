@@ -80,25 +80,25 @@ const NavBar = () => {
                     Pricing
                   </motion.p>
                   <Link to="/#faq">
-                  <motion.p
-                    whileTap={{ scale: 0.9 }}
-                    whileHover={{ scale: 1.04 }}
-                    //onClick={handleScrollToFAQ}
-                    className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
-                  >
-                    FAQ
-                  </motion.p>
+                    <motion.p
+                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ scale: 1.04 }}
+                      //onClick={handleScrollToFAQ}
+                      className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                    >
+                      FAQ's
+                    </motion.p>
                   </Link>
 
                   <Link to="/#whoweare">
-                  <motion.p
-                    whileTap={{ scale: 0.9 }}
-                    whileHover={{ scale: 1.04 }}
-                    //onClick={handleScrollToFAQ}
-                    className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
-                  >
-                    Who We Are
-                  </motion.p>
+                    <motion.p
+                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ scale: 1.04 }}
+                      //onClick={handleScrollToFAQ}
+                      className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                    >
+                      Who We Are
+                    </motion.p>
                   </Link>
 
                   <motion.p
@@ -171,6 +171,25 @@ const NavBar = () => {
                       >
                         Pricing
                       </p>
+                      <Link to="/#faq">
+                        <p
+
+                          //onClick={handleScrollToFAQ}
+                          className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} text-sm mt-3 hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                        >
+                          FAQ's
+                        </p>
+                      </Link>
+
+                      <Link to="/#whoweare">
+                        <p
+
+                          //onClick={handleScrollToFAQ}
+                          className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} text-sm mt-3 hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                        >
+                          Who We Are
+                        </p>
+                      </Link>
 
                       <p
                         onClick={() => navigate("/contactus")}
@@ -212,7 +231,7 @@ const NavBar = () => {
             </Grid>
           </Grid>
         </Container>
-      </div>
+      </div >
     </>
   );
 };

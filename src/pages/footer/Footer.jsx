@@ -28,7 +28,7 @@ function Footer() {
               </div>
               <div>
                 <div className=" flex flex-wrap gap-8">
-                <motion.p
+                  <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
                     onClick={() => navigate("/")}
@@ -52,24 +52,24 @@ function Footer() {
                   </motion.p>
 
                   <Link to="/#faq">
-                  <motion.p
-                    whileTap={{ scale: 0.9 }}
-                    whileHover={{ scale: 1.04 }}
-                    //onClick={handleScrollToFAQ}
-                    className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
-                  >
-                    FAQ
-                  </motion.p>
+                    <motion.p
+                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ scale: 1.04 }}
+                      //onClick={handleScrollToFAQ}
+                      className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                    >
+                      FAQ
+                    </motion.p>
                   </Link>
-                <Link to="/#whoweare">
-                  <motion.p
-                    whileTap={{ scale: 0.9 }}
-                    whileHover={{ scale: 1.04 }}
-                    //onClick={handleScrollToFAQ}
-                    className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
-                  >
-                    Who We Are
-                  </motion.p>
+                  <Link to="/#whoweare">
+                    <motion.p
+                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ scale: 1.04 }}
+                      //onClick={handleScrollToFAQ}
+                      className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} font-Raleway font-normal capitalize tracking-widest cursor-pointer hover:text-[#757575]`}
+                    >
+                      Who We Are
+                    </motion.p>
                   </Link>
 
                   <motion.p
@@ -106,7 +106,8 @@ function Footer() {
                 <a href="tel:+1(844)264-4453">
                   <p className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white  text-center md:text-right mt-16">(844) 264-4453</p>
                 </a>
-                <p className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white  text-center md:text-right mt-16">1603 Capitol Avenue Cheyenne, WY 82001, USA
+                <p className="hover:text-[#cc3333] cursor-pointer font-Raleway text-white  text-center md:text-right mt-16">1603 Capitol Avenue,
+                  Cheyenne, WY 82001
 
                 </p>
               </div>
@@ -125,7 +126,7 @@ function Footer() {
                 >
                   <SubscriptionsRoundedIcon sx={{ color: "white", fontSize: "40px" }} />
                 </a>
-               
+
                 <a
                   href="https://www.instagram.com/pgldispatch?igsh=YnpxODNneTZ5czdt"
                   target="_blank"
@@ -175,7 +176,7 @@ function Footer() {
                   >
                     FAQ
                   </motion.p>
-                  </Link>
+                </Link>
                 <Link to="/#whoweare">
                   <motion.p
                     whileTap={{ scale: 0.9 }}
@@ -185,7 +186,7 @@ function Footer() {
                   >
                     Who We Are
                   </motion.p>
-                  </Link>
+                </Link>
 
                 <motion.p
                   whileInView={{

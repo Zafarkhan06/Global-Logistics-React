@@ -268,7 +268,7 @@ function Home() {
                 </p>
                 <div className="mt-16 flex flex-col md:flex-row gap-10 lg:gap-28 items-start">
                   <div className="flex justify-center  items-center w-full md:w-1/3 flex-col">
-                    <FolderCopyIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
+                    <FolderCopyIcon className="animate-bounce" sx={{ fontSize: "70px", color: "#cc3333" }} />
 
                     <div className="bg-[#cc3333] hover:shadow-black hover:shadow-2xl mt-3 px-5 py-3 rounded-xl  shadow-xl">
                       <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-white">Send Documents
@@ -313,7 +313,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="flex w-full md:w-1/3 justify-center items-center flex-col">
-                    <LocalShippingIcon sx={{ fontSize: "70px", color: "#cc3333" }} />
+                    <LocalShippingIcon className="animate-bounce"  sx={{ fontSize: "70px", color: "#cc3333" }} />
                     <div className="bg-[#cc3333] mt-3 px-5 py-3 rounded-xl hover:shadow-black hover:shadow-2xl shadow-xl">
                       <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-white">Hit the road
 
@@ -373,10 +373,12 @@ function Home() {
                         "#cc3333",
                       color: "white",
                       "&:hover": {
-                        background:
-                          "#cc3333",
-                        boxShadow: "none",
-                      },
+                          background:
+                            "white",
+                          boxShadow: "none",
+                          color: "#cc3333",
+                          border: "1px solid #cc3333"
+                        },
                     }}> Hire a dispatcher today</Button>
                   </div>
                 </div>

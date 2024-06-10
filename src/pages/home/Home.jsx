@@ -139,12 +139,12 @@ function Home() {
                         "#cc3333",
                       color: "white",
                       "&:hover": {
-                          background:
-                            "white",
-                          boxShadow: "none",
-                          color: "#cc3333",
-                          border: "1px solid #cc3333"
-                        },
+                        background:
+                          "white",
+                        boxShadow: "none",
+                        color: "#cc3333",
+                        border: "1px solid #cc3333"
+                      },
                     }}> Click here to change routes</Button>
                   </div>
                 </div>
@@ -342,7 +342,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="flex w-full md:w-1/3 justify-center items-center flex-col">
-                    <LocalShippingIcon className="animate-bounce"  sx={{ fontSize: "70px", color: "#cc3333" }} />
+                    <LocalShippingIcon className="animate-bounce" sx={{ fontSize: "70px", color: "#cc3333" }} />
                     <div className="bg-[#cc3333] mt-3 px-5 py-3 rounded-xl hover:shadow-black hover:shadow-2xl shadow-xl">
                       <p className="md:text-xl text-lg mt-5 mb-4 lg:text-2xl font-semibold font-Raleway text-center   text-white">Hit the road
 
@@ -402,12 +402,12 @@ function Home() {
                         "#cc3333",
                       color: "white",
                       "&:hover": {
-                          background:
-                            "white",
-                          boxShadow: "none",
-                          color: "#cc3333",
-                          border: "1px solid #cc3333"
-                        },
+                        background:
+                          "white",
+                        boxShadow: "none",
+                        color: "#cc3333",
+                        border: "1px solid #cc3333"
+                      },
                     }}> Hire a dispatcher today</Button>
                   </div>
                 </div>
@@ -440,23 +440,23 @@ function Home() {
 
                   <div className="flex flex-col md:flex-row">
 
-                    <div className="mr-0 md:mr-8 mb-6 md:mb-0 md:w-1/3">
+                    {/* <div className="mr-0 md:mr-4 mb-6 md:mb-0 md:w-1/3">
                       <img className="w-full mx-auto" src={whoIcon} alt="can_help_banner" />
-                    </div>
+                    </div> */}
 
 
                     <div className="flex-1 flex flex-col font-Monts sm:flex-row flex-wrap -mb-4 -mx-4">
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
                         <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
                           <h3 className="text-2xl font-bold text-md mb-4">Our Mission:</h3>
-                          <p className="text-xs">At PGL Dispatch, we're more than just a team of truck dispatchers - we're your dedicated partners on the road to success. Our mission is simple: to empower carriers and owner-operators like you to thrive in an industry where profitability is key. We believe in transparency, reliability, and building long-lasting relationships based on trust and exceptional service.
+                          <p className="text-base">At PGL Dispatch, we're more than just a team of truck dispatchers - we're your dedicated partners on the road to success. Our mission is simple: to empower carriers and owner-operators like you to thrive in an industry where profitability is key. We believe in transparency, reliability, and building long-lasting relationships based on trust and exceptional service.
                           </p>
                         </div>
                       </div>
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
                         <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
                           <h3 className="text-2xl font-bold text-md mb-4">Our Fee Model:</h3>
-                          <p className="text-xs"> With our low percentage fee model, we're motivated to negotiate the highest rates possible for you, because when you succeed, we succeed. We've done away with restrictive contracts, opting instead for a commitment to providing unparalleled customer service and support. Unlike other dispatchers and brokers who prioritize their bottom line over your success, we're here to prioritize you.
+                          <p className="text-base"> With our low percentage fee model, we're motivated to negotiate the highest rates possible for you, because when you succeed, we succeed. We've done away with restrictive contracts, opting instead for a commitment to providing unparalleled customer service and support. Unlike other dispatchers and brokers who prioritize their bottom line over your success, we're here to prioritize you.
                           </p>
                         </div>
                       </div>
@@ -464,7 +464,7 @@ function Home() {
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
                         <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
                           <h3 className="text-2xl font-bold text-md mb-6">24/7 Customer Support:</h3>
-                          <p className="text-xs">Our team works tirelessly behind the scenes to handle all the details, from finding the highest paying loads to managing paperwork and invoicing. We're available 24/7 to assist you with any needs or concerns, ensuring that you always have the support you need, whenever you need it.
+                          <p className="text-base">Our team works tirelessly behind the scenes to handle all the details, from finding the highest paying loads to managing paperwork and invoicing. We're available 24/7 to assist you with any needs or concerns, ensuring that you always have the support you need, whenever you need it.
                           </p>
                         </div>
                       </div>
@@ -472,7 +472,7 @@ function Home() {
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
                         <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
                           <h3 className="text-2xl font-bold text-md mb-6">Maximize your Business:</h3>
-                          <p className="text-xs">At PGL Dispatch, we understand that your time is best spent on the road, so let us take care of the rest. We're here to streamline your operations, maximize your profitability, and help you achieve your goals. With PGL Dispatch by your side, you can focus on driving and growing your business, confident that you have a trusted partner supporting you every step of the way.</p>
+                          <p className="text-base">At PGL Dispatch, we understand that your time is best spent on the road, so let us take care of the rest. We're here to streamline your operations, maximize your profitability, and help you achieve your goals. With PGL Dispatch by your side, you can focus on driving and growing your business, confident that you have a trusted partner supporting you every step of the way.</p>
                         </div>
                       </div>
                     </div>
@@ -537,12 +537,13 @@ function Home() {
                   <FAQ />
                 </div>
               </div> */}
-              <div>
-                <Testimonials />
-              </div>
+
             </Grid>
           </Grid>
         </Container>
+        <div>
+          <Testimonials />
+        </div>
         {/* <Container
           disableGutters={true}
           maxWidth="lg"

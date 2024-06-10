@@ -122,8 +122,8 @@ function ContactUs() {
     if (validateForm()) {
       const { name, email, message, sendCopy } = formData;
       const subject = "Message from Contact Form";
-      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
-      let mailtoLink = `mailto:hr@thelightcommunications.com?subject=${encodeURIComponent(
+      const body = `Name: ${name} Email: ${email} Message: ${message}`;
+      let mailtoLink = `mailto:info@perfectgloballogistics.com?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(body)}`;
 

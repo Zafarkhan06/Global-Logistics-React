@@ -119,10 +119,10 @@ function Home() {
                   />
                 </div>
                 <div className="w-full mt-10 md:mt-2 md:w-1/2">
-                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-start italic text-[#292929] ">Hit the road on your terms, you're the boss
+                  <p className="md:text-3xl text-2xl lg:text-4xl font-bold font-Monts text-center md:text-start italic text-[#292929] ">You're the Boss
+
                   </p>
-                  <p className="md:text-base text-sm lg:text-xl font-normal font-Raleway text-center mt-5 md:text-start text-[#292929] ">Loads, rates and routes are your choice, no force dispatching. We make sure you get the best freight at the best rate and get paid on time. Documentation, prices and fees are disclosed upfront.
-                  </p>
+                  <p className="md:text-base text-sm lg:text-xl font-normal font-Raleway text-center mt-5 md:text-start text-[#292929] ">Hit the road on your terms – you call the shots. Loads, rates, and routes are your choice, with no force dispatching. At PGL Dispatch, everything we do is tailored to your preferences. We ensure you get the best freight at the best rate and get paid on time, every time. Drive with confidence knowing you're in control every step of the way. </p>
                   <div className="mt-6 flex justify-center md:justify-start lg:mt-10">
                     <Button variant="contained" onClick={() => navigate("/price-and-plans")} className="font-Raleway" sx={{
 

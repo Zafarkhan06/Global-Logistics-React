@@ -10,6 +10,8 @@ import truckstop from "../../asset/images/truckkstop.png";
 import dat from "../../asset/images/2560px-DAT-Solutions-Logo.svg.png";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from "react-router-dom";
+import IGLogo from "../../asset/images/IG logo.png";
+import YtLogo from "../../asset/images/YT logo.png";
 function Footer() {
   const navigate = useNavigate();
   return (
@@ -27,7 +29,7 @@ function Footer() {
                 </p>
               </div>
               <div>
-                <div className=" flex flex-wrap gap-8">
+                <div className=" flex flex-wrap justify-center gap-8">
                   <motion.p
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.04 }}
@@ -91,13 +93,14 @@ function Footer() {
                 <div className="flex justify-center md:justify-start mb-6">
                   <LazyLoadImage onClick={() => navigate("/")} src={logo} alt="muntazim logo" className="rounded-full w-2/12 cursor-pointer" />
                 </div>
-                <div className="flex gap-2 items-center">
-                  <div>
-                    <LazyLoadImage src={truckstop} alt="muntazim logo" className=" w-full " />
+                <div className="flex justify-start items-center">
+                  <div className="w-full md:w-11/12">
+                    <LazyLoadImage src={dat} alt="muntazim logo" className="w-5/6 md:w-full" />
                   </div>
-                  <div >
-                    <LazyLoadImage src={dat} alt="muntazim logo" className=" w-1/2 " />
+                  <div className="w-full md:w-12/12">
+                    <LazyLoadImage src={truckstop} alt="muntazim logo" className="w-full md:w-9/12 " />
                   </div>
+
                 </div>
               </div>
               <div>
@@ -113,25 +116,27 @@ function Footer() {
               </div>
             </div>
             <div className="flex justify-between md:flex-row flex-col items-center">
-              <div className="flex gap-4 mt-10 mb-10">
+              <div className="flex gap-4 items-center mt-10 mb-10">
                 <a
                   href="https://www.facebook.com/perfectgloballogistics"
                   target="_blank"
                 >
-                  <FacebookRoundedIcon sx={{ color: "white", fontSize: "40px" }} />
+                  <FacebookRoundedIcon sx={{ color: "white", fontSize: "45px" }} />
                 </a>
                 <a
                   href="http://youtube.com/@perfectgloballogistics"
                   target="_blank"
                 >
-                  <SubscriptionsRoundedIcon sx={{ color: "white", fontSize: "40px" }} />
+                  {/* <SubscriptionsRoundedIcon sx={{ color: "white", fontSize: "40px" }} /> */}
+                  <LazyLoadImage src={YtLogo} alt="muntazim logo" className=" w-[40px] " />
                 </a>
 
                 <a
                   href="https://www.instagram.com/pgldispatch?igsh=YnpxODNneTZ5czdt"
                   target="_blank"
                 >
-                  < InstagramIcon sx={{ color: "white", fontSize: "40px" }} />
+                  {/* < InstagramIcon sx={{ color: "white", fontSize: "40px" }} /> */}
+                  <LazyLoadImage src={IGLogo} alt="muntazim logo" className=" w-[40px]" />
                 </a>
               </div>
               <div>
@@ -142,7 +147,7 @@ function Footer() {
             <hr className="mt-5" />
             <div className="flex justify-center items-center py-8">
 
-              <div className=" flex flex-wrap gap-8">
+              <div className=" flex flex-wrap justify-center gap-8">
                 <motion.p
                   whileInView={{
                     opacity: 1,
@@ -205,6 +210,7 @@ function Footer() {
           </Grid>
         </Grid>
       </Container>
+      
     </div>
   );
 }

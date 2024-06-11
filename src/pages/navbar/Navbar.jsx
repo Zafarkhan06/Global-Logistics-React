@@ -158,7 +158,7 @@ const NavBar = () => {
                         className={`text-sm ${location.pathname === "/"
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575]   py-2 tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575]   py-2 tracking-wide font-Raleway cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Home
                       </p>
@@ -167,7 +167,7 @@ const NavBar = () => {
                         className={`text-sm mt-3 ${window.location.href.includes("/pricing")
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575] py-2   tracking-wide font-Raleway cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Pricing
                       </p>
@@ -175,7 +175,7 @@ const NavBar = () => {
                         <p
 
                           //onClick={handleScrollToFAQ}
-                          className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} text-sm mt-3 hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          className={` ${location.hash === "#faq" ? "text-[#cc3333]" : "text-white"} text-sm mt-3 hover:text-[#757575] py-2   tracking-wide font-Raleway cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                         >
                           FAQ's
                         </p>
@@ -185,7 +185,7 @@ const NavBar = () => {
                         <p
 
                           //onClick={handleScrollToFAQ}
-                          className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} text-sm mt-3 hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          className={` ${location.hash === "#whoweare" ? "text-[#cc3333]" : "text-white"} text-sm mt-3 hover:text-[#757575] py-2   tracking-wide font-Raleway cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                         >
                           Who We Are
                         </p>
@@ -196,7 +196,7 @@ const NavBar = () => {
                         className={`text-sm mt-3 ${window.location.href.includes("/contactus")
                           ? "text-[#cc3333]"
                           : "text-white"
-                          }  hover:text-[#757575] py-2   tracking-widest cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
+                          }  hover:text-[#757575] py-2   tracking-wide font-Raleway cursor-pointer px-8 font-medium hover:bg-[#2e2a2a]`}
                       >
                         Contact Us
                       </p>

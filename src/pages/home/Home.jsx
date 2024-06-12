@@ -10,9 +10,9 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import talkingGirl from "../../asset/images/talking-girl.png";
 import { useNavigate } from "react-router";
-import whoIcon from "../../asset/images/whoicon.png";
 import FAQ from "./Faq";
 import Testimonials from "./Reviews";
+import videoTestimonial from "../../asset/videos/video-testimonial.mp4";
 
 
 
@@ -107,10 +107,10 @@ function Home() {
                 <p className="text-xl font-medium font-Raleway text-start text-[#292929] ">Let us take care of the rest. At <span className="text-[#cc3333] font-semibold">PGL Dispatch</span>, we understand your time is best spent on the road. That's why we handle everything else for you.</p>
                 <p className="text-lg font-normal font-Raleway text-start text-[#292929] mt-3 ">We find the highest paying loads and plan your routes to ensure every mile counts. Our team keeps in touch with brokers and shippers, so you're always in the loop. We take care of setting up with new freight brokers, handle all the paperwork, and invoice to get you paid quickly, whether through your factoring company or directly from brokers. Our dispatch team is available 24/7 to assist you with any needs or concerns, or in case of emergencies whenever required.</p>
                 <p className="text-lg font-normal font-Raleway text-start text-[#292929] ">With us, you can focus on driving and growing your business. Let <span className="text-[#cc3333] font-semibold">PGL Dispatch</span> be your trusted partner on the road to success, making your job easier and more profitable.</p>
-                <SvgComponent className="absolute -bottom-52 -right-32 w-1/3 opacity-40 z-0 " />
+                <SvgComponent className="absolute -bottom-48 -right-32 w-1/3 opacity-40 z-0 " />
               </div>
               <div className="md:mt-24 flex  flex-col relative md:flex-row items-center justify-between">
-                <SvgComponent className="absolute -top-10 right-96 w-20 opacity-40 z-0 " />
+                <SvgComponent className="absolute -top-40 right-96 w-20 opacity-40 z-0 " />
                 <div className="md:w-1/2 mt-10 md:mt-2">
                   <LazyLoadImage
                     src={capPerson}
@@ -148,7 +148,7 @@ function Home() {
                     }}> Click here to change routes</Button>
                   </div>
                 </div>
-                <SvgComponent className="absolute -bottom-3 right-10 w-32  opacity-60 " />
+                <SvgComponent className="absolute -bottom-10 right-10 w-32  opacity-60 " />
               </div>
               {/* <div className="truck-bg rounded-2xl shadow-2xl mt-20 realtive">
                 <div className="py-20 px-6 md:px-20 flex flex-col  md:items-end">
@@ -447,14 +447,35 @@ function Home() {
 
                     <div className="flex-1 flex flex-col font-Monts sm:flex-row flex-wrap -mb-4 -mx-4">
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
-                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                        <div
+                          className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-tl-xl rounded-br-xl transition-shadow duration-300"
+                          style={{
+                            boxShadow: '0 0 rgba(0, 0, 0, 0)',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '4px 4px 10px 2px #cc3333'; // Adjusted for spread and blur
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 0 rgba(0, 0, 0, 0)';
+                          }}
+                        >
                           <h3 className="text-2xl font-bold text-md mb-4">Our Mission:</h3>
-                          <p className="text-base">At PGL Dispatch, we're more than just a team of truck dispatchers - we're your dedicated partners on the road to success. Our mission is simple: to empower carriers and owner-operators like you to thrive in an industry where profitability is key. We believe in transparency, reliability, and building long-lasting relationships based on trust and exceptional service.
+                          <p className="text-base">
+                            At PGL Dispatch, we're more than just a team of truck dispatchers - we're your dedicated partners on the road to success. Our mission is simple: to empower carriers and owner-operators like you to thrive in an industry where profitability is key. We believe in transparency, reliability, and building long-lasting relationships based on trust and exceptional service.
                           </p>
                         </div>
                       </div>
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
-                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl rounded-tl-xl transition-shadow duration-300"
+                          style={{
+                            boxShadow: '0 0 rgba(0, 0, 0, 0)',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '4px 4px 10px 2px #cc3333'; // Adjusted for spread and blur
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 0 rgba(0, 0, 0, 0)';
+                          }}>
                           <h3 className="text-2xl font-bold text-md mb-4">Our Fee Model:</h3>
                           <p className="text-base"> With our low percentage fee model, we're motivated to negotiate the highest rates possible for you, because when you succeed, we succeed. We've done away with restrictive contracts, opting instead for a commitment to providing unparalleled customer service and support. Unlike other dispatchers and brokers who prioritize their bottom line over your success, we're here to prioritize you.
                           </p>
@@ -462,7 +483,16 @@ function Home() {
                       </div>
 
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
-                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl rounded-tl-xl transition-shadow duration-300"
+                          style={{
+                            boxShadow: '0 0 rgba(0, 0, 0, 0)',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '4px 4px 10px 2px #cc3333'; // Adjusted for spread and blur
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 0 rgba(0, 0, 0, 0)';
+                          }}>
                           <h3 className="text-2xl font-bold text-md mb-6">24/7 Customer Support:</h3>
                           <p className="text-base">Our team works tirelessly behind the scenes to handle all the details, from finding the highest paying loads to managing paperwork and invoicing. We're available 24/7 to assist you with any needs or concerns, ensuring that you always have the support you need, whenever you need it.
                           </p>
@@ -470,7 +500,16 @@ function Home() {
                       </div>
 
                       <div className="w-full sm:w-1/2 mb-6 px-2 ">
-                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-br-xl">
+                        <div className="h-full py-2 px-6 border border-[#cc3333] border-t-0 border-l-0 rounded-tl-xl rounded-br-xl transition-shadow duration-300"
+                          style={{
+                            boxShadow: '0 0 rgba(0, 0, 0, 0)',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '4px 4px 10px 2px #cc3333'; // Adjusted for spread and blur
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 0 rgba(0, 0, 0, 0)';
+                          }}>
                           <h3 className="text-2xl font-bold text-md mb-6">Maximize your Business:</h3>
                           <p className="text-base">At PGL Dispatch, we understand that your time is best spent on the road, so let us take care of the rest. We're here to streamline your operations, maximize your profitability, and help you achieve your goals. With PGL Dispatch by your side, you can focus on driving and growing your business, confident that you have a trusted partner supporting you every step of the way.</p>
                         </div>
@@ -514,36 +553,35 @@ function Home() {
             </Grid>
           </Container>
         </div>
+
+        <div>
+          <Testimonials />
+        </div>
         <Container
-          id="faq"
+
           disableGutters={true}
           maxWidth="lg"
           sx={{ px: { xs: "10px", lg: "0px" } }}
         >
           <Grid container sx={{ justifyContent: "center" }}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              {/* <div className="py-16 bg-white">
-                <div className=" flex flex-col justify-between">
-
-                  <div className="text-center">
-                    <p className=" text-base font-Monts leading-7 text-[#292929] font-normal">
-                      F.A.Q's
-                    </p>
-                    <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight font-Monts text-[#292929]">
-                      Frequently Asked <span className="text-[#cc3333]">Questions</span>
-                    </h3>
-
-                  </div>
-                  <FAQ />
+              <div className="flex  flex-col md:flex-row justify-center py-10 gap-20 items-center">
+                <div className="w-full md:w-1/2">
+                  <p className="md:text-4xl text-2xl lg:text-6xl font-bold font-Monts text-start italic text-black">Meet Wonseleh, <br /> one of our <span className="text-[#cc3333]">Happy Customer</span>
+                  </p>
+                  <p className="md:text-xl mt-5 text-xs lg:text-2xl font-normal font-Raleway text-start text-black">Wonseleh from Anointed Express, LLC, shares his positive experience of working with Perfect Global Logistics for over two years. He highlights their exceptional communication and reliability in providing consistent loads, ensuring they remain busy. Perfect Global Logistics has been instrumental in supporting their needs, offering help whenever required. Boinsley highly values their partnership, indicating the superior service and commitment they have received throughout their collaboration.
+                  </p>
                 </div>
-              </div> */}
+                <div>
+                  <video className="max-h-[50%] rounded-2xl w-full" controls >
+                    <source src={videoTestimonial} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
 
             </Grid>
           </Grid>
         </Container>
-        <div>
-          <Testimonials />
-        </div>
         {/* <Container
           disableGutters={true}
           maxWidth="lg"
